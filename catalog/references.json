@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-10",
+  "references": [
+    {
+      "id": "gusbavia-world-of-peaches",
+      "name": "The World of Peaches",
+      "author": "Gus Bavia",
+      "source_url": "https://github.com/gusbavia/the-world-of-peaches",
+      "license": "MIT",
+      "license_checked": "2026-11-10",
+      "source_type": "power-bi",
+      "categories": [
+        "dashboards",
+        "kpi",
+        "navigation",
+        "visualization"
+      ],
+      "patterns": [
+        "semantic theme tokens",
+        "KPI tower",
+        "dynamic page structure",
+        "accessible alt text"
+      ],
+      "source_paths": [
+        "html-components/",
+        "html-components/css/",
+        "src/StaticResources/"
+      ],
+      "reuse_note": "Power BI HTML/DAX patterns; adapt ideas or explicitly licensed code, not drop-in React components.",
+      "status": "SOURCE_REVIEWED"
+    },
+    {
+      "id": "gusbavia-city-sustainability",
+      "name": "City Sustainability Scorecard",
+      "author": "Gus Bavia",
+      "source_url": "https://github.com/gusbavia/city-sustainability-scorecard",
+      "license": "MIT",
+      "license_checked": "2026-11-10",
+      "source_type": "power-bi",
+      "categories": [
+        "dashboards",
+        "components",
+        "charts",
+        "accessibility"
+      ],
+      "patterns": [
+        "HTML panels and cards",
+        "sparklines and radar displays",
+        "normalized metrics",
+        "alt text measures"
+      ],
+      "source_paths": [
+        "html-components/",
+        "html-components/css/",
+        "dax/",
+        "src/StaticResources/"
+      ],
+      "reuse_note": "Upstream README lists 74 HTML templates. Check chart legibility and dependencies before reusing.",
+      "status": "SOURCE_REVIEWED"
+    },
+    {
+      "id": "gusbavia-assisted-report",
+      "name": "Assisted Report",
+      "author": "Gus Bavia",
+      "source_url": "https://github.com/gusbavia/assisted-report",
+      "license": "MIT",
+      "license_checked": "2026-11-10",
+      "source_type": "web-experience",
+      "categories": [
+        "websites",
+        "presentations",
+        "scrollytelling",
+        "visualization"
+      ],
+      "patterns": [
+        "guided briefing",
+        "section-based storytelling",
+        "caption synchronization",
+        "user-controlled pausing"
+      ],
+      "source_paths": [
+        "index.html",
+        "assets/data.js",
+        "assets/tour.js"
+      ],
+      "reuse_note": "External libraries and audio assets have separate considerations; avoid making voice narration mandatory.",
+      "status": "SOURCE_REVIEWED"
+    },
+    {
+      "id": "gusbavia-pbi-theme",
+      "name": "PBI Theme",
+      "author": "Gus Bavia",
+      "source_url": "https://github.com/gusbavia/pbi-theme",
+      "license": "MIT",
+      "license_checked": "2026-11-10",
+      "source_type": "design-system-tool",
+      "categories": [
+        "tokens",
+        "themes",
+        "power-bi",
+        "accessibility"
+      ],
+      "patterns": [
+        "semantic color families",
+        "responsive typography",
+        "light and dark mode",
+        "accessible contrast"
+      ],
+      "source_paths": [
+        "README.md",
+        "SKILL.md"
+      ],
+      "reuse_note": "Power BI-specific theme generator. Reference the principle rather than assuming generated JSON supports web apps.",
+      "status": "SOURCE_REVIEWED"
+    },
+    {
+      "id": "local-dashboard",
+      "name": "Decision-first Dashboard Shell",
+      "author": "taiduc1302",
+      "source_url": "patterns/dashboard/index.html",
+      "license": "MIT",
+      "license_checked": "2026-11-10",
+      "source_type": "local-html",
+      "categories": [
+        "dashboards",
+        "apps",
+        "components"
+      ],
+      "patterns": [
+        "KPI card",
+        "priority queue",
+        "filterable table",
+        "responsive layout"
+      ],
+      "source_paths": [
+        "patterns/dashboard/index.html",
+        "patterns/dashboard/style.css",
+        "tokens/design-tokens.css"
+      ],
+      "reuse_note": "Original fictional demo; usability and design refinements welcome.",
+      "status": "PROTOTYPED"
+    },
+    {
+      "id": "local-website",
+      "name": "Clean Product Website",
+      "author": "taiduc1302",
+      "source_url": "patterns/website/index.html",
+      "license": "MIT",
+      "license_checked": "2026-11-10",
+      "source_type": "local-html",
+      "categories": [
+        "websites",
+        "marketing",
+        "responsive"
+      ],
+      "patterns": [
+        "editorial hero",
+        "feature grid",
+        "CTA hierarchy"
+      ],
+      "source_paths": [
+        "patterns/website/index.html",
+        "patterns/website/style.css",
+        "tokens/design-tokens.css"
+      ],
+      "reuse_note": "Original fictional example; replace words and images for new projects.",
+      "status": "PROTOTYPED"
+    },
+    {
+      "id": "local-presentation",
+      "name": "Technical Briefing Presentation",
+      "author": "taiduc1302",
+      "source_url": "patterns/presentations/index.html",
+      "license": "MIT",
+      "license_checked": "2026-11-10",
+      "source_type": "local-html",
+      "categories": [
+        "presentations",
+        "storytelling",
+        "accessibility"
+      ],
+      "patterns": [
+        "one-message-per-slide",
+        "evidence cards",
+        "clear narrative close"
+      ],
+      "source_paths": [
+        "patterns/presentations/index.html",
+        "patterns/presentations/style.css",
+        "tokens/design-tokens.css"
+      ],
+      "reuse_note": "HTML sample, not a PPTX; keyboard and print support included.",
+      "status": "PROTOTYPED"
+    }
+  ]
+}
