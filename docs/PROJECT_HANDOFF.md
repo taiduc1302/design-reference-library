@@ -24,6 +24,13 @@
 
 > Use `taiduc1302/design-reference-library` for design references. Read its AGENTS.md, catalog, licensing rules and corresponding pattern. Do not transplant the full upstream repo. Explain the visual hierarchy and implement a minimal slice, then test it on narrow and desktop screens. Use only synthetic data in public examples, and log license/provenance for copied code.
 
+## Existing reusable components (v0.2)
+
+- [Component API and demo](../components/README.md) — original, dependency-free UI code for KPI, status, sparkline, decision callout and table.
+- [Provenance](COMPONENT_PROVENANCE.md) — precise source commits and concept notes.
+- [Component manifest](../catalog/components.json) — states and test scope.
+- [Component QA](QA_COMPONENTS_2026-11-12.md) — tested logic and remaining browser limitations.
+
 ## Versioning
 
 - Treat tokens as a separate compatibility contract; changing them can affect every app.

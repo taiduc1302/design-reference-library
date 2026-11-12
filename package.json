@@ -1,0 +1,13 @@
+{
+  "name": "design-reference-library",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Curated open design references and reusable dependency-free UI components",
+  "scripts": {
+    "test": "node --test components/tests/data.test.mjs components/tests/components.test.mjs",
+    "check": "node --test components/tests/data.test.mjs components/tests/components.test.mjs && python scripts/validate_catalog.py && python scripts/validate_components.py"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

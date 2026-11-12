@@ -3,7 +3,7 @@
 A curated, implementation-ready reference library for websites, web applications, dashboards, presentation systems, and future design work. This is a **living design knowledge base**, not a dumping ground of random screenshots and third-party code.
 
 **Maintainer:** [taiduc1302](https://github.com/taiduc1302)  
-**Stage:** v0.1 published; original examples included; upstream reference projects catalogued, not vendored.  
+**Stage:** v0.2; five original reusable components plus three original demos; upstream reference projects catalogued, not vendored.  
 **Privacy:** only synthetic, public, or explicitly approved content.
 
 ## What belongs here
@@ -14,7 +14,7 @@ A curated, implementation-ready reference library for websites, web applications
 - **Presentation patterns**: reusable layouts for business proposals, technical briefings, and product demos.
 - **Agent operating rules**: one entry point that future assistants and developers can apply when designing an interface.
 
-## Preview the original starter examples
+## Preview the original demos and reusable components
 
 From the repository root:
 
@@ -22,7 +22,7 @@ From the repository root:
 python -m http.server 8765
 ```
 
-Open `http://localhost:8765/gallery/` and explore the dashboard, website, and presentation demos. The examples require **no npm install, no APIs, no credentials**. All content is fictional.
+Open `http://localhost:8765/gallery/` to explore the dashboard, website, presentation and new [component kit](components/demo/). All data is fictional; there are **no API keys or third-party runtime dependencies**. The component kit is framework-neutral HTML/CSS/JS. See [`components/README.md`](components/README.md) for documented exports and usage.
 
 ## Start with an appropriate reference
 
@@ -35,8 +35,9 @@ Open `http://localhost:8765/gallery/` and explore the dashboard, website, and pr
 | Modern dashboard shell with states | [`patterns/dashboard/`](patterns/dashboard/) | Original starter demo |
 | Professional product landing page | [`patterns/website/`](patterns/website/) | Original starter demo |
 | Keyboard-controlled HTML presentation | [`patterns/presentations/`](patterns/presentations/) | Original starter demo |
+| KPI, status, callout, table, sparkline primitives | [`components/`](components/) | Code-tested prototype; browser visual QA pending |
 
-Structured metadata: [`catalog/references.json`](catalog/references.json).
+Structured metadata: [`catalog/references.json`](catalog/references.json), [`catalog/components.json`](catalog/components.json), and pinned upstream commits in [`catalog/upstreams.json`](catalog/upstreams.json).
 
 ## How to use this library for a new project
 
@@ -46,16 +47,18 @@ Structured metadata: [`catalog/references.json`](catalog/references.json).
 4. Build a small design slice (tokens + 2-3 components) against fictional data, then test keyboard access, responsiveness, and loading/empty/error states.
 5. Promote a component to the reusable library only after code review and visual verification; preserve upstream notices for any copied code.
 
-## GitHub setup
+## GitHub forks and updates
 
-The central repository is now published at [taiduc1302/design-reference-library](https://github.com/taiduc1302/design-reference-library). The upstream source projects remain linked rather than vendored; creating any optional GitHub forks is a separate task. The included Windows PowerShell script can create missing forks through GitHub CLI after authentication:
+The central repo is live at [`taiduc1302/design-reference-library`](https://github.com/taiduc1302/design-reference-library). **The four Gus Bavia forks are not yet created** because the connected GitHub actions do not support fork creation. Their parents, last observed commit SHAs and intended fork destinations are pinned in [`catalog/upstreams.json`](catalog/upstreams.json).
+
+On your Windows machine, after `gh auth login`:
 
 ```powershell
-.\scripts\bootstrap-github.ps1
-.\scripts\bootstrap-github.ps1 -Mode apply -ForkSources
+.\scripts\fork-gusbavia.ps1          # read-only check
+.\scripts\fork-gusbavia.ps1 -Apply   # creates and verifies missing forks
 ```
 
-The first command only previews the planned operations. See [`docs/FORKS.md`](docs/FORKS.md) for safeguards and manual commands.
+See [`docs/FORKS.md`](docs/FORKS.md) for the four one-click Fork links or manual commands; never describe a simple code copy as a fork.
 
 ## Important boundaries
 
@@ -67,11 +70,11 @@ The first command only previews the planned operations. See [`docs/FORKS.md`](do
 
 ## Next milestones
 
-1. Create optional source forks; verify each fork points to the original parent.
-2. Capture screenshots and usability notes for each curated source after an independent visual review.
-3. Establish an approved component library in the actual frontend stack (e.g. React, Vue, or plain HTML), selected when a production project needs it.
-4. Add one real project integration at a time: Tender Finder, AI Model Advisor, Statement Calendar, then Civil Takeoff QA.
-5. Introduce regression checks for tokens, contrast, responsiveness, visual diffs, and source provenance.
+1. Create and verify the four real upstream forks (blocked on GitHub Fork permission/UI or CLI).
+2. Complete browser visual QA for the five original, code-tested components. The current execution environment blocked all Chromium page navigation; see [`docs/QA_COMPONENTS_2026-11-12.md`](docs/QA_COMPONENTS_2026-11-12.md).
+3. Integrate one component into a real project at a time (Tender Finder, AI Model Advisor, Statement Calendar, then Civil Takeoff QA) with a review gate.
+4. Add more website, presentation and report components only after evaluating reuse demand and license provenance.
+5. Add screenshot visual regressions and accessibility audits as an opt-in local workflow, without GitHub Actions.
 
 ## License
 

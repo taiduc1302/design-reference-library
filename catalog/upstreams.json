@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-12",
+  "owner": "taiduc1302",
+  "forks": [
+    {
+      "upstream": "gusbavia/the-world-of-peaches",
+      "upstream_sha": "0692068e53acf75550c0290824f0fc0aa6090a8a",
+      "desired_fork": "taiduc1302/the-world-of-peaches",
+      "license": "MIT",
+      "fork_status": "NOT_PRESENT_AT_LAST_CHECK",
+      "source_interest": "KPI rows, visual hierarchy, decision-oriented reporting"
+    },
+    {
+      "upstream": "gusbavia/city-sustainability-scorecard",
+      "upstream_sha": "87020be37c73b8b5e34c91407919987e55e75780",
+      "desired_fork": "taiduc1302/city-sustainability-scorecard",
+      "license": "MIT",
+      "fork_status": "NOT_PRESENT_AT_LAST_CHECK",
+      "source_interest": "Context headers, scorecard cards, visualization patterns"
+    },
+    {
+      "upstream": "gusbavia/assisted-report",
+      "upstream_sha": "93d90e32f713d51234150fd0a1725f9531967625",
+      "desired_fork": "taiduc1302/assisted-report",
+      "license": "MIT",
+      "fork_status": "NOT_PRESENT_AT_LAST_CHECK",
+      "source_interest": "Narrative reporting and user-directed briefings"
+    },
+    {
+      "upstream": "gusbavia/pbi-theme",
+      "upstream_sha": "3f3d2ac7fc4761defffbc7f09a9c0c6c096d074e",
+      "desired_fork": "taiduc1302/pbi-theme",
+      "license": "MIT",
+      "fork_status": "NOT_PRESENT_AT_LAST_CHECK",
+      "source_interest": "Semantic tokens and accessible palette systems"
+    }
+  ]
+}

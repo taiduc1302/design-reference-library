@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_on": "2026-11-10",
+  "reviewed_on": "2026-11-12",
   "references": [
     {
       "id": "gusbavia-world-of-peaches",
@@ -191,6 +191,37 @@
         "tokens/design-tokens.css"
       ],
       "reuse_note": "HTML sample, not a PPTX; keyboard and print support included.",
+      "status": "PROTOTYPED"
+    },
+    {
+      "id": "local-component-kit",
+      "name": "Decision-focused Reusable UI Component Kit",
+      "author": "taiduc1302",
+      "source_url": "components/demo/index.html",
+      "license": "MIT",
+      "license_checked": "2026-11-12",
+      "source_type": "local-html",
+      "categories": [
+        "components",
+        "dashboards",
+        "apps",
+        "accessibility"
+      ],
+      "patterns": [
+        "status badges",
+        "contextual KPI card",
+        "sparkline",
+        "decision callout",
+        "searchable table"
+      ],
+      "source_paths": [
+        "components/demo/index.html",
+        "components/src/components.mjs",
+        "components/src/data.mjs",
+        "components/components.css",
+        "components/README.md"
+      ],
+      "reuse_note": "Original dependency-free components; 17 Node tests pass; Chromium navigation blocked in current QA runtime. Production adoption requires visual QA and real app integration.",
       "status": "PROTOTYPED"
     }
   ]

@@ -11,3 +11,4 @@ build/
 .playwright/
 test-results/
 *.log
+.qa-output/

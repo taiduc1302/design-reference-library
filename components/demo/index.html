@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Component Kit · Design Reference Library</title>
+  <meta name="description" content="Dependency-free reusable UI components for decision-first dashboards.">
+  <link rel="stylesheet" href="../../tokens/design-tokens.css">
+  <link rel="stylesheet" href="../components.css">
+  <style>
+    body{background:var(--canvas)}
+    .shell{max-width:1140px;width:calc(100% - 40px);margin:auto}
+    .topbar{background:var(--surface);border-bottom:1px solid var(--line)}
+    .topbar .shell{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:70px;font-size:13px}
+    .wordmark{display:flex;align-items:center;gap:12px;font-weight:780}
+    .mark{width:34px;height:34px;border-radius:9px;background:var(--ink);color:var(--surface);display:grid;place-items:center}
+    .topbar a{font-size:12px;color:var(--ink-muted);text-underline-offset:4px}
+    .intro{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:24px;padding:48px 0 35px}
+    .eyebrow{color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin:0 0 16px}
+    h1{font-size:clamp(35px,5.4vw,57px);line-height:1.06;letter-spacing:-.05em;margin:0 0 18px}
+    .lead{font-size:14px;max-width:680px;line-height:1.7;color:var(--ink-muted);margin:0}
+    .intro-note{border:1px solid var(--line);border-radius:9px;background:var(--surface);padding:10px 13px;font-size:11px;color:var(--ink-muted)}
+    .section{margin:0 0 37px}
+    .section-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;margin-bottom:15px}
+    .section-head h2{font-size:20px;letter-spacing:-.035em;margin:0}
+    .section-head p{font-size:12px;color:var(--ink-muted);margin:0}
+    .badge-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+    .control-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:12px}
+    .output-note{font-size:12px;line-height:1.5;color:var(--ink-muted);margin:11px 0 0;min-height:20px}
+    footer{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;border-top:1px solid var(--line);color:var(--ink-muted);padding:28px 0 48px;font-size:11px}
+    @media(max-width:600px){.intro{padding:36px 0 28px}.topbar .shell{min-height:60px}.shell{width:calc(100% - 28px)}.intro-note{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="shell"><div class="wordmark"><span class="mark" aria-hidden="true">D.</span><span>Design Reference Library</span></div><a href="../../gallery/">Back to gallery</a></div></header>
+  <main class="shell">
+    <div class="intro"><div><p class="eyebrow">Reusable components · v0.2</p><h1>Clarity you can reuse.</h1><p class="lead">Five dependency-free primitives for dashboards and decision workflows. All data on this page is fictional. Controls run locally; no accounts, APIs or network requests.</p></div><div class="intro-note">Original code · MIT · Browser ESM</div></div>
+    <section class="section" aria-labelledby="metric-title"><div class="section-head"><h2 id="metric-title">01 / Contextual KPI cards</h2><p>State the number, meaning and benchmark together.</p></div><div id="metric-cards" class="dr-component-grid"></div></section>
+    <section class="section" aria-labelledby="status-title"><div class="section-head"><h2 id="status-title">02 / Explicit verification states</h2><p>Meaning stays visible without depending on color.</p></div><div id="status-badges" class="badge-row"></div></section>
+    <section class="section" aria-labelledby="action-title"><div class="section-head"><h2 id="action-title">03 / Decision callout</h2><p>Action buttons only appear when they have handlers.</p></div><div id="decision"></div><p id="action-result" role="status" class="output-note">No action taken.</p></section>
+    <section class="section" aria-labelledby="table-title"><div class="section-head"><h2 id="table-title">04 / Searchable evidence table</h2><p>Sort, filter, keyboard, loading, empty and error states.</p></div><div class="control-row"><button id="show-sample" class="dr-button dr-button--primary" type="button">Sample rows</button><button id="show-loading" class="dr-button" type="button">Loading state</button><button id="show-empty" class="dr-button" type="button">Empty state</button><button id="show-error" class="dr-button" type="button">Error state</button></div><div id="table"></div></section>
+    <footer><span>Library v0.2 · Verified functionality is not production adoption.</span><span>Upstream ideas: Gus Bavia (attributed in provenance documents).</span></footer>
+  </main>
+  <script type="module" src="./main.mjs"></script>
+</body>
+</html>

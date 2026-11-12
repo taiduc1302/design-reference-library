@@ -41,6 +41,10 @@
 - Approved date/reviewer:
 ```
 
+## Machine-tested vs visual-tested
+
+Node unit tests and DOM fakes validate deterministic component behavior, not actual browser rendering, responsive layout, color contrast, focus order or assistive-technology announcements. Mark these as `PROTOTYPED` until a real browser review verifies them at 1440, 390 and 320 px (plus keyboard, empty/error states, no unintended page overflow). An application is `ADOPTED` only after its project-specific acceptance tests.
+
 ## Never promote by screenshot alone
 
 A pretty screenshot may hide unreadable dense tables, broken mobile UX, inaccessible charts, external CDN dependencies or misleading data. Keep a record of what the browser actually did.

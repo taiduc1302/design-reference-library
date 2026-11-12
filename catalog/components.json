@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "version": "0.2.0",
+  "components": [
+    {
+      "id": "status-badge",
+      "name": "Status Badge",
+      "export": "createStatusBadge",
+      "entrypoint": "components/src/components.mjs",
+      "style": "components/components.css",
+      "use_case": "Explicit text plus color for workflow and verification states",
+      "tested_with": [
+        "Node data helper tests",
+        "Node component DOM tests"
+      ],
+      "status": "PROTOTYPED",
+      "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
+      "unverified_checks": [
+        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+      ]
+    },
+    {
+      "id": "sparkline",
+      "name": "Accessible Sparkline",
+      "export": "createSparkline",
+      "entrypoint": "components/src/components.mjs",
+      "style": "components/components.css",
+      "use_case": "Brief numeric trend with text alternative",
+      "tested_with": [
+        "Node geometry tests",
+        "Node component DOM tests"
+      ],
+      "status": "PROTOTYPED",
+      "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
+      "unverified_checks": [
+        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+      ]
+    },
+    {
+      "id": "kpi-card",
+      "name": "Contextual KPI Card",
+      "export": "createKpiCard",
+      "entrypoint": "components/src/components.mjs",
+      "style": "components/components.css",
+      "use_case": "Metric, context, benchmark, and trend in one unit",
+      "tested_with": [
+        "Node data helper tests",
+        "Node component DOM tests"
+      ],
+      "status": "PROTOTYPED",
+      "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
+      "unverified_checks": [
+        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+      ]
+    },
+    {
+      "id": "decision-callout",
+      "name": "Decision Callout",
+      "export": "createDecisionCallout",
+      "entrypoint": "components/src/components.mjs",
+      "style": "components/components.css",
+      "use_case": "Actionable review hold, owner, and next action",
+      "tested_with": [
+        "Node component DOM tests"
+      ],
+      "status": "PROTOTYPED",
+      "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
+      "unverified_checks": [
+        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+      ]
+    },
+    {
+      "id": "data-table",
+      "name": "Searchable Data Table",
+      "export": "createDataTable",
+      "entrypoint": "components/src/components.mjs",
+      "style": "components/components.css",
+      "use_case": "Sorted, filtered records with loading, error and empty states",
+      "tested_with": [
+        "Node sort/filter tests",
+        "Node component DOM tests"
+      ],
+      "status": "PROTOTYPED",
+      "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
+      "unverified_checks": [
+        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+      ]
+    }
+  ]
+}

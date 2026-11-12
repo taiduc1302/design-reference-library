@@ -1,24 +1,31 @@
-# Bootstrapping forks and the central repository
+# Forks and provenance
 
-The central repository has been published to GitHub. The connected GitHub API available in Chat may support reading/editing existing repositories, but **cannot be assumed to create forks**. The four source forks have not been created by publishing this library.
+**Remote state verified 2026-11-12:** `taiduc1302/design-reference-library` exists and accepts GitHub connector writes. The four requested Gus Bavia forks were **not present** in the connected account's repository list at that check. The connector currently has no `fork repository` or `create repository` action. A copy of source code in the central library must never be described as a GitHub fork.
 
-## Windows setup
+Source commits and expected destinations are pinned in [`catalog/upstreams.json`](../catalog/upstreams.json). The central library is deliberately original code; its upstream ideas and licenses are documented separately.
 
-Prerequisites: [Git](https://git-scm.com/) and [GitHub CLI](https://cli.github.com/), both on your PATH, plus `gh auth login`. Never paste GitHub tokens into chats, logs or this repository.
+## Fastest manual option: GitHub's Fork button
 
-Open PowerShell in the extracted `design-reference-library` folder:
+- [The World of Peaches — Fork](https://github.com/gusbavia/the-world-of-peaches/fork)
+- [City Sustainability Scorecard — Fork](https://github.com/gusbavia/city-sustainability-scorecard/fork)
+- [Assisted Report — Fork](https://github.com/gusbavia/assisted-report/fork)
+- [PBI Theme — Fork](https://github.com/gusbavia/pbi-theme/fork)
+
+Choose **Owner: `taiduc1302`**, retain the original repo names, and keep the fork relationship. GitHub offers “Copy the DEFAULT branch only”; leave that unchecked if preserving all branches matters for studying history. Verify each new fork's page says **forked from gusbavia/...**.
+
+## Windows one-command option (GitHub CLI)
+
+Install [GitHub CLI](https://cli.github.com/), sign in locally using `gh auth login` (never share tokens), then from the repository root:
 
 ```powershell
-# Read the proposed operations (no GitHub mutations):
-.\scripts\bootstrap-github.ps1
+# Inspects only; makes no changes
+.\scripts\fork-gusbavia.ps1
 
-# Explicitly create missing GitHub resources:
-.\scripts\bootstrap-github.ps1 -Mode apply -ForkSources
+# Creates missing real forks, checks parent, never overwrites
+.\scripts\fork-gusbavia.ps1 -Apply
 ```
 
-For this existing central repository, this operation skips central repository creation/push and forks exactly four specified MIT-licensed source repositories. It will skip already existing destinations rather than overwriting them. **Do not run from within another existing Git repository.**
-
-For manual fork-only setup:
+Or use the manual commands:
 
 ```powershell
 gh repo fork gusbavia/the-world-of-peaches --clone=false
@@ -27,16 +34,15 @@ gh repo fork gusbavia/assisted-report --clone=false
 gh repo fork gusbavia/pbi-theme --clone=false
 ```
 
-Official CLI references: https://cli.github.com/manual/gh_repo_fork and https://cli.github.com/manual/gh_repo_create
+**Note:** The older `bootstrap-github.ps1` exists for initial repo creation; the central repo now exists. Prefer `fork-gusbavia.ps1` for forks only. No GitHub Actions or paid automation needed.
 
-## After setup: verify and manage
+## Verify each actual parent
 
 ```powershell
-gh repo view taiduc1302/design-reference-library --web
-gh repo view taiduc1302/the-world-of-peaches --web
-gh repo view taiduc1302/city-sustainability-scorecard --web
-gh repo view taiduc1302/assisted-report --web
-gh repo view taiduc1302/pbi-theme --web
+gh api repos/taiduc1302/the-world-of-peaches --jq '.parent.full_name'
+gh api repos/taiduc1302/city-sustainability-scorecard --jq '.parent.full_name'
+gh api repos/taiduc1302/assisted-report --jq '.parent.full_name'
+gh api repos/taiduc1302/pbi-theme --jq '.parent.full_name'
 ```
 
-When updates are available, compare upstream changes before syncing fork branches; do not merge blindly into the curated library. For the first iteration, do not enable GitHub Actions; keep checks local and manual.
+Expected output: corresponding `gusbavia/...` (not `null`). Only after seeing those results, update `catalog/upstreams.json` status for each verified fork from `NOT_PRESENT_AT_LAST_CHECK` to `VERIFIED_PARENT`. Sync each fork deliberately after reviewing upstream changes; do not treat fork merges as automatically approved component code.

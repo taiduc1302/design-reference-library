@@ -5,9 +5,9 @@
 ## First read
 
 1. `README.md`
-2. `catalog/references.json`
-3. `docs/CURATION_RULES.md`
-4. `THIRD_PARTY_NOTICES.md`
+2. `catalog/references.json`, `catalog/components.json`, `catalog/upstreams.json`
+3. `components/README.md` and `docs/COMPONENT_PROVENANCE.md`
+4. `docs/CURATION_RULES.md` and `THIRD_PARTY_NOTICES.md`
 5. `docs/PROJECT_HANDOFF.md`
 
 ## Operating contract
@@ -22,7 +22,8 @@
 - Design mobile-first: focus order, contrast, reduced motion, keyboard interactions, visible focus, empty/error/loading states, legible charts.
 - Avoid copying private customer data, real tender documents, family information, API keys, or project secrets into this public repository.
 - Do not quietly add build systems, cloud services, network dependencies, automated GitHub Actions, or paid products.
-- Prefer small reviewed components rather than wholesale imports from Power BI or specialized frameworks.
+- Prefer small reviewed components rather than wholesale imports from Power BI or specialized frameworks. Start with `components/src/components.mjs` and `components/components.css` for web apps; port rather than mixing direct DOM manipulation into React/Vue managed trees.
+- A Node test suite confirms logic but is not a substitute for Chromium visual and keyboard QA. Keep component status PROTOTYPED until both are recorded.
 - For code modifications, locally run the available validator and test on narrow and desktop screens. Document limitations.
 
 ## Definition of Done for a promoted reusable pattern
