@@ -9,6 +9,33 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / '.qa-output'
 
 
+
+import re
+
+def isolated_browser_html():
+    """Assemble the unchanged CSS/JS modules for about:blank preview when HTTP/file navigation is blocked.
+
+    This mode checks rendered UI interactions, not HTTP delivery or CSP enforcement.
+    """
+    page = (ROOT / "components/demo/index.html").read_text(encoding="utf-8")
+    def stylesheet(match):
+        file = (ROOT / "components/demo" / match.group(1)).resolve()
+        if not file.is_relative_to(ROOT):
+            raise ValueError("CSS path escapes repository")
+        return "<style>\\n" + file.read_text(encoding="utf-8") + "\\n</style>"
+    page = re.sub(r'<link\\s+rel="stylesheet"\\s+href="([^"]+)"\\s*>', stylesheet, page)
+    pieces = []
+    for name in ("components/src/data.mjs", "components/src/components.mjs", "components/demo/main.mjs"):
+        code = (ROOT / name).read_text(encoding="utf-8")
+        code = re.sub(r"^import\\s+[^\\n]+\\n", "", code, flags=re.MULTILINE)
+        code = re.sub(r"^export\\s+", "", code, flags=re.MULTILINE)
+        pieces.append(code)
+    joined = "\\n".join(pieces) + "\\nwindow.__designQA={createDataTable};"
+    page = page.replace('<script type="module" src="./main.mjs"></script>', "<script>\\n" + joined + "\\n</script>")
+    if 'src="./main.mjs"' in page or 'rel="stylesheet"' in page:
+        raise AssertionError("Failed to inline source assets for isolated QA")
+    return page
+
 def main():
     from playwright.sync_api import sync_playwright
     handler = partial(SimpleHTTPRequestHandler, directory=str(ROOT))
@@ -20,11 +47,18 @@ def main():
         with sync_playwright() as p:
             browser = p.chromium.launch(headless=True, executable_path='/usr/bin/chromium', args=['--no-sandbox'])
             try:
-                for width, height in [(1440, 900), (390, 844), (320, 740)]:
+                for width, height in [(1440, 900), (1024, 768), (768, 1024), (390, 844), (320, 740)]:
                     page = browser.new_page(viewport={'width': width, 'height': height}, reduced_motion='reduce')
                     errors = []
                     page.on('pageerror', lambda error: errors.append(str(error)))
-                    page.goto(url, wait_until='networkidle')
+                    try:
+                        page.goto(url, wait_until='networkidle')
+                    except Exception as nav_error:
+                        if 'ERR_BLOCKED_BY_ADMINISTRATOR' not in str(nav_error):
+                            raise
+                        page.set_content(isolated_browser_html(), wait_until='load')
+                    hint = page.locator('.dr-table__scroll-hint')
+                    assert hint.is_visible() == (width <= 640)
                     assert page.get_by_role('heading', name='Clarity you can reuse.').count() == 1
                     assert page.locator('.dr-kpi').count() == 4
                     assert page.locator('.dr-status').count() >= 5
@@ -57,7 +91,7 @@ def main():
                         assert page.locator('.dr-table tbody tr').count() == 4
                         # Verify user content cannot inject HTML or execute scripts.
                         injected = page.evaluate('''async () => {
-                           const {createDataTable} = await import('/components/src/components.mjs');
+                           const {createDataTable} = window.__designQA || await import('/components/src/components.mjs');
                            const t=createDataTable({caption:'Security demo', columns:[{key:'label',label:'Label'}],
                             rows:[{label:'<img src=x onerror=alert(1)>'}]});
                            document.body.append(t.element);

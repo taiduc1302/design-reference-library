@@ -112,6 +112,7 @@ export function createDataTable({caption = 'Records', columns = [], rows = [], s
   feedback.setAttribute('aria-live', 'polite');
   toolbar.append(label, search, feedback);
   root.append(toolbar);
+  root.append(element('p', 'dr-table__scroll-hint', 'Swipe or scroll the table horizontally to see all columns.'));
 
   const scroll = element('div', 'dr-table__scroll');
   scroll.tabIndex = 0;

@@ -3,7 +3,7 @@
 A curated, implementation-ready reference library for websites, web applications, dashboards, presentation systems, and future design work. This is a **living design knowledge base**, not a dumping ground of random screenshots and third-party code.
 
 **Maintainer:** [taiduc1302](https://github.com/taiduc1302)  
-**Stage:** v0.2; five original reusable components plus three original demos; upstream reference projects catalogued, not vendored.  
+**Stage:** v0.2.1; five visually checked original components plus three original demos; upstream reference projects catalogued, not vendored.  
 **Privacy:** only synthetic, public, or explicitly approved content.
 
 ## What belongs here
@@ -35,7 +35,7 @@ Open `http://localhost:8765/gallery/` to explore the dashboard, website, present
 | Modern dashboard shell with states | [`patterns/dashboard/`](patterns/dashboard/) | Original starter demo |
 | Professional product landing page | [`patterns/website/`](patterns/website/) | Original starter demo |
 | Keyboard-controlled HTML presentation | [`patterns/presentations/`](patterns/presentations/) | Original starter demo |
-| KPI, status, callout, table, sparkline primitives | [`components/`](components/) | Code-tested prototype; browser visual QA pending |
+| KPI, status, callout, table, sparkline primitives | [`components/`](components/) | Isolated Chromium checked; production/browser/CSP QA pending |
 
 Structured metadata: [`catalog/references.json`](catalog/references.json), [`catalog/components.json`](catalog/components.json), and pinned upstream commits in [`catalog/upstreams.json`](catalog/upstreams.json).
 
@@ -71,8 +71,8 @@ See [`docs/FORKS.md`](docs/FORKS.md) for the four one-click Fork links or manual
 ## Next milestones
 
 1. Create and verify the four real upstream forks (blocked on GitHub Fork permission/UI or CLI).
-2. Complete browser visual QA for the five original, code-tested components. The current execution environment blocked all Chromium page navigation; see [`docs/QA_COMPONENTS_2026-11-12.md`](docs/QA_COMPONENTS_2026-11-12.md).
-3. Integrate one component into a real project at a time (Tender Finder, AI Model Advisor, Statement Calendar, then Civil Takeoff QA) with a review gate.
+2. Complete packaged HTTP/CSP and cross-browser QA; isolated Chromium screenshot and interaction QA now passed five widths. See [`docs/QA_COMPONENTS_2026-11-12.md`](docs/QA_COMPONENTS_2026-11-12.md).
+3. Review the [Tender Finder PR #110](https://github.com/taiduc1302/canada-tender-finder/pull/110) and [AI Model Advisor PR #23](https://github.com/taiduc1302/ai-model-advisor/pull/23) UX pilots, then use the patterns in other projects only after their individual safety/visual acceptance gates.
 4. Add more website, presentation and report components only after evaluating reuse demand and license provenance.
 5. Add screenshot visual regressions and accessibility audits as an opt-in local workflow, without GitHub Actions.
 

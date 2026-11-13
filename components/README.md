@@ -68,4 +68,4 @@ The Node suite is dependency-free; NPM only runs Node and does not install anyth
 
 ## Promotion rule
 
-Passing smoke tests supports **technical reuse**, not production readiness. `catalog/components.json` keeps status `PROTOTYPED` until a reviewed integration meets a real project's acceptance criteria. See [curation rules](../docs/CURATION_RULES.md).
+Passing isolated Chromium visual/interaction checks supports **visual review**, not production readiness. `catalog/components.json` marks these components `VISUALLY_CHECKED`; move to `ADOPTED` only when project-specific acceptance tests, packaged browser checks and safety review pass. See [curation rules](../docs/CURATION_RULES.md).

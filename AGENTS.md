@@ -23,7 +23,7 @@
 - Avoid copying private customer data, real tender documents, family information, API keys, or project secrets into this public repository.
 - Do not quietly add build systems, cloud services, network dependencies, automated GitHub Actions, or paid products.
 - Prefer small reviewed components rather than wholesale imports from Power BI or specialized frameworks. Start with `components/src/components.mjs` and `components/components.css` for web apps; port rather than mixing direct DOM manipulation into React/Vue managed trees.
-- A Node test suite confirms logic but is not a substitute for Chromium visual and keyboard QA. Keep component status PROTOTYPED until both are recorded.
+- A Node suite confirms logic but is not a substitute for browser QA. VISUALLY_CHECKED means isolated Chromium visual/interaction checks have evidence; ADOPTED requires project-specific tests and real delivery QA.
 - For code modifications, locally run the available validator and test on narrow and desktop screens. Document limitations.
 
 ## Definition of Done for a promoted reusable pattern

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "components": [
     {
       "id": "status-badge",
@@ -11,12 +11,15 @@
       "use_case": "Explicit text plus color for workflow and verification states",
       "tested_with": [
         "Node data helper tests",
-        "Node component DOM tests"
+        "Node component DOM tests",
+        "Chromium isolated-source QA: 320, 390, 768, 1024, 1440 px; visible keyboard focus, contrast, forced-colors, search/sort/empty/loading/error states"
       ],
-      "status": "PROTOTYPED",
+      "status": "VISUALLY_CHECKED",
       "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
       "unverified_checks": [
-        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+        "Normal HTTP/file delivery and CSP",
+        "Cross-browser/OS screenshots and screen-reader/manual review",
+        "Project-specific acceptance before ADOPTED"
       ]
     },
     {
@@ -28,12 +31,15 @@
       "use_case": "Brief numeric trend with text alternative",
       "tested_with": [
         "Node geometry tests",
-        "Node component DOM tests"
+        "Node component DOM tests",
+        "Chromium isolated-source QA: 320, 390, 768, 1024, 1440 px; visible keyboard focus, contrast, forced-colors, search/sort/empty/loading/error states"
       ],
-      "status": "PROTOTYPED",
+      "status": "VISUALLY_CHECKED",
       "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
       "unverified_checks": [
-        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+        "Normal HTTP/file delivery and CSP",
+        "Cross-browser/OS screenshots and screen-reader/manual review",
+        "Project-specific acceptance before ADOPTED"
       ]
     },
     {
@@ -45,12 +51,15 @@
       "use_case": "Metric, context, benchmark, and trend in one unit",
       "tested_with": [
         "Node data helper tests",
-        "Node component DOM tests"
+        "Node component DOM tests",
+        "Chromium isolated-source QA: 320, 390, 768, 1024, 1440 px; visible keyboard focus, contrast, forced-colors, search/sort/empty/loading/error states"
       ],
-      "status": "PROTOTYPED",
+      "status": "VISUALLY_CHECKED",
       "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
       "unverified_checks": [
-        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+        "Normal HTTP/file delivery and CSP",
+        "Cross-browser/OS screenshots and screen-reader/manual review",
+        "Project-specific acceptance before ADOPTED"
       ]
     },
     {
@@ -61,12 +70,15 @@
       "style": "components/components.css",
       "use_case": "Actionable review hold, owner, and next action",
       "tested_with": [
-        "Node component DOM tests"
+        "Node component DOM tests",
+        "Chromium isolated-source QA: 320, 390, 768, 1024, 1440 px; visible keyboard focus, contrast, forced-colors, search/sort/empty/loading/error states"
       ],
-      "status": "PROTOTYPED",
+      "status": "VISUALLY_CHECKED",
       "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
       "unverified_checks": [
-        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+        "Normal HTTP/file delivery and CSP",
+        "Cross-browser/OS screenshots and screen-reader/manual review",
+        "Project-specific acceptance before ADOPTED"
       ]
     },
     {
@@ -78,12 +90,15 @@
       "use_case": "Sorted, filtered records with loading, error and empty states",
       "tested_with": [
         "Node sort/filter tests",
-        "Node component DOM tests"
+        "Node component DOM tests",
+        "Chromium isolated-source QA: 320, 390, 768, 1024, 1440 px; visible keyboard focus, contrast, forced-colors, search/sort/empty/loading/error states"
       ],
-      "status": "PROTOTYPED",
+      "status": "VISUALLY_CHECKED",
       "source_category": "ORIGINAL_CODE_INFORMED_BY_REFERENCES",
       "unverified_checks": [
-        "Chromium responsive and keyboard smoke test (blocked by administrator policy in this environment)"
+        "Normal HTTP/file delivery and CSP",
+        "Cross-browser/OS screenshots and screen-reader/manual review",
+        "Project-specific acceptance before ADOPTED"
       ]
     }
   ]
