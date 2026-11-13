@@ -22,16 +22,16 @@ def isolated_browser_html():
         file = (ROOT / "components/demo" / match.group(1)).resolve()
         if not file.is_relative_to(ROOT):
             raise ValueError("CSS path escapes repository")
-        return "<style>\\n" + file.read_text(encoding="utf-8") + "\\n</style>"
-    page = re.sub(r'<link\\s+rel="stylesheet"\\s+href="([^"]+)"\\s*>', stylesheet, page)
+        return "<style>\n" + file.read_text(encoding="utf-8") + "\n</style>"
+    page = re.sub(r'<link\s+rel="stylesheet"\s+href="([^"]+)"\s*>', stylesheet, page)
     pieces = []
     for name in ("components/src/data.mjs", "components/src/components.mjs", "components/demo/main.mjs"):
         code = (ROOT / name).read_text(encoding="utf-8")
-        code = re.sub(r"^import\\s+[^\\n]+\\n", "", code, flags=re.MULTILINE)
-        code = re.sub(r"^export\\s+", "", code, flags=re.MULTILINE)
+        code = re.sub(r"^import\s+[^\n]+\n", "", code, flags=re.MULTILINE)
+        code = re.sub(r"^export\s+", "", code, flags=re.MULTILINE)
         pieces.append(code)
-    joined = "\\n".join(pieces) + "\\nwindow.__designQA={createDataTable};"
-    page = page.replace('<script type="module" src="./main.mjs"></script>', "<script>\\n" + joined + "\\n</script>")
+    joined = "\n".join(pieces) + "\nwindow.__designQA={createDataTable};"
+    page = page.replace('<script type="module" src="./main.mjs"></script>', "<script>\n" + joined + "\n</script>")
     if 'src="./main.mjs"' in page or 'rel="stylesheet"' in page:
         raise AssertionError("Failed to inline source assets for isolated QA")
     return page
