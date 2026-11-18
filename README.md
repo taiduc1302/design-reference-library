@@ -47,7 +47,9 @@ Structured metadata: [`catalog/references.json`](catalog/references.json), [`cat
 
 These are **research leads**, not checked reusable components. No code, media, extensions, agent skills, or third-party dependencies have been copied, installed, integrated or security-audited. For tested design patterns, continue using `catalog/references.json` and the curation process below.
 
-Browse research-only candidates locally: run `python -m http.server 8765` from the repository root and open [`gallery/opportunities.html`](gallery/opportunities.html). This is a searchable index of **unverified research leads**, not vetted components.
+Browse research-only candidates locally: run `python -m http.server 8765` from the repository root and open [`gallery/opportunities.html`](gallery/opportunities.html). This is a searchable index of **unverified research leads**, not vetted components. [Pilot acceptance specifications](docs/CHANMENG666_PILOT_ACCEPTANCE_2026-11-17.md) document the next three experiments.
+
+Run offline research checks with `npm test` and `python scripts/validate_chanmeng666_research.py`. Optional five-mode real-browser QA: `python scripts/qa_opportunities.py` after installing Playwright + Chromium locally. Do not claim browser QA passed if the browser cannot launch or local HTTP is blocked.
 
 ## How to use this library for a new project
 
