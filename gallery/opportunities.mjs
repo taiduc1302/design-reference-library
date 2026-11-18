@@ -74,7 +74,6 @@ async function init() {
     records = catalog.records;
     targetLabels = new Map(catalog.targets.map((item) => [item.id, item.label]));
     for (const item of catalog.targets) {
-      if (item.id === 'other') continue;
       const option = plain('option', item.label);
       option.value = item.id;
       els.target.append(option);
