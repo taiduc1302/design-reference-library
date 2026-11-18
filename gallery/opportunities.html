@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>External Research Leads | Design Reference Library</title>
+  <meta name="description" content="Browse proposed uses of public third-party repositories. None are adopted or security-reviewed.">
+  <link rel="stylesheet" href="../tokens/design-tokens.css">
+  <link rel="stylesheet" href="./opportunities.css">
+  <script type="module" src="./opportunities.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#results-title">Skip to results</a>
+  <header class="app-header">
+    <div class="container header-inner">
+      <a class="brand" href="./">D. <span>Design Reference Library</span></a>
+      <a class="back-link" href="../docs/CHANMENG666_OPPORTUNITY_RESEARCH_2026-11-16.md">Research methodology</a>
+    </div>
+  </header>
+  <main class="container">
+    <div class="heading">
+      <div>
+        <p class="eyebrow">RESEARCH / NOT VERIFIED FOR ADOPTION</p>
+        <h1>External opportunities</h1>
+        <p class="lede">Explore public GitHub projects by applicability and engineering priority. This is a planning index, <strong>not</strong> a list of approved components or safe-to-install packages.</p>
+      </div>
+      <div class="count-panel" aria-label="Catalog summary">
+        <strong id="total-count">—</strong>
+        <span>research leads</span>
+      </div>
+    </div>
+    <section class="notice" aria-label="Research limitations">
+      <strong>Research-only inventory.</strong> Sources and proposed uses have not been independently security-audited, installed, integrated, or tested for your application. Validate file-level licenses and dependencies before reuse. Never enter private project data into an upstream demo.
+    </section>
+    <section class="controls" aria-labelledby="filter-title">
+      <h2 id="filter-title">Find an opportunity</h2>
+      <form id="filters" class="filter-grid" autocomplete="off">
+        <label class="field field-search" for="search">Search source or idea
+          <input id="search" name="search" type="search" placeholder="e.g. 3D, accessibility, tender, report">
+        </label>
+        <label class="field" for="priority">Priority
+          <select id="priority" name="priority">
+            <option value="all">All priorities</option>
+            <option value="HIGH">High</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="LOW">Low</option>
+            <option value="NONE">No current use</option>
+          </select>
+        </label>
+        <label class="field" for="target">Target capability
+          <select id="target" name="target"><option value="all">All target areas</option></select>
+        </label>
+        <label class="field" for="kind">Source type
+          <select id="kind" name="kind">
+            <option value="all">All source types</option>
+            <option value="project">Project</option>
+            <option value="fork">Fork</option>
+            <option value="archived">Archived</option>
+          </select>
+        </label>
+        <label class="field" for="category">Group
+          <select id="category" name="category">
+            <option value="all">All groups</option>
+            <option value="ai-cad-mcp">AI / CAD / MCP</option>
+            <option value="visual-design">Visual design</option>
+            <option value="video-3d">Video / 3D</option>
+            <option value="archived">Archived examples</option>
+          </select>
+        </label>
+        <button type="reset" class="clear-button">Clear filters</button>
+      </form>
+    </section>
+    <section class="results" aria-labelledby="results-title">
+      <div class="results-head">
+        <div>
+          <h2 id="results-title">Research leads</h2>
+          <p id="result-status" role="status" aria-live="polite">Loading local catalog…</p>
+        </div>
+        <a href="../catalog/chanmeng666-opportunity-matrix.json">View raw JSON</a>
+      </div>
+      <div class="table-region" tabindex="0" role="region" aria-label="Scrollable research results">
+        <table>
+          <caption>Observed public repositories, proposed uses and limitations. Ranked high to low.</caption>
+          <thead><tr><th scope="col">Source</th><th scope="col">Priority</th><th scope="col">Useful for</th><th scope="col">Research note</th></tr></thead>
+          <tbody id="rows"><tr><td colspan="4">Loading…</td></tr></tbody>
+        </table>
+      </div>
+      <p class="footnote">Snapshot: 16 November 2026. Sort order is research priority, not readiness or adoption. Source type distinguishes forks and archived examples.</p>
+    </section>
+  </main>
+</body>
+</html>
