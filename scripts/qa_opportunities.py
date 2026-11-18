@@ -9,6 +9,7 @@ from contextlib import contextmanager
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from shutil import which
 from threading import Thread
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -41,7 +42,15 @@ def main():
         ("reflow-320", {"viewport": {"width": 320, "height": 740}}),
     ]
     with local_server() as url, sync_playwright() as playwright:
-        browser = playwright.chromium.launch(headless=True)
+        # Prefer Playwright's bundled executable; when it is unavailable,
+        # use an already installed local browser. Do not download packages.
+        installed = Path(playwright.chromium.executable_path)
+        system_browser = next((which(name) for name in ("chromium", "chromium-browser", "google-chrome") if which(name)), None)
+        executable = None if installed.is_file() else system_browser
+        if not installed.is_file() and not executable:
+            raise RuntimeError("Chromium is not installed locally; browser QA was NOT RUN")
+        print("Browser executable:", executable or str(installed), flush=True)
+        browser = playwright.chromium.launch(headless=True, executable_path=executable)
         try:
             for name, settings in modes:
                 context = browser.new_context(**settings)
