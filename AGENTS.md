@@ -10,6 +10,15 @@
 4. `docs/CURATION_RULES.md` and `THIRD_PARTY_NOTICES.md`
 5. `docs/PROJECT_HANDOFF.md`
 
+## Unvetted external opportunities
+
+The research inventory in `catalog/chanmeng666-opportunity-matrix.json` and its [pilot specifications](docs/CHANMENG666_PILOT_ACCEPTANCE_2026-11-17.md) are **not** in the promoted design catalog. `RESEARCH_LEAD` never means `SOURCE_REVIEWED`, `VISUALLY_CHECKED`, or `ADOPTED`.
+
+- Read the research note and inspect exact upstream source/files/licenses before proposing any integration.
+- Do not install third-party agent skills or packages, run arbitrary hooks, copy artwork/media, or share private data while exploring an opportunity.
+- Test the gallery with `npm test` and `python scripts/validate_chanmeng666_research.py`; browser screenshot testing is optional and must be identified as `NOT_RUN` when unavailable.
+- Pilot a single isolated feature with synthetic evidence, clear rollback conditions and project-specific QA. Follow target repository coordination rules before editing it.
+
 ## Operating contract
 
 - Start with the user's audience, tasks, success criteria, available data, and required output medium.
