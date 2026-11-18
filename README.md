@@ -47,6 +47,8 @@ Structured metadata: [`catalog/references.json`](catalog/references.json), [`cat
 
 These are **research leads**, not checked reusable components. No code, media, extensions, agent skills, or third-party dependencies have been copied, installed, integrated or security-audited. For tested design patterns, continue using `catalog/references.json` and the curation process below.
 
+Browse research-only candidates locally: run `python -m http.server 8765` from the repository root and open [`gallery/opportunities.html`](gallery/opportunities.html). This is a searchable index of **unverified research leads**, not vetted components.
+
 ## How to use this library for a new project
 
 1. Read [`AGENTS.md`](AGENTS.md) and [`docs/PROJECT_HANDOFF.md`](docs/PROJECT_HANDOFF.md).
