@@ -48,3 +48,33 @@ td a { color: #224ac1; font-weight: 700; }
 @media (max-width: 950px) { .filter-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } .field-search { grid-column: span 3; } }
 @media (max-width: 600px) { .container { width: min(100% - 28px, 1180px); } .brand span { display: none; } .heading { display: block; padding: 30px 0 17px; } .count-panel { margin-top: 19px; display: flex; align-items: baseline; justify-content: center; gap: 10px; padding: 12px; } .count-panel strong { font-size: 28px; } .filter-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .field-search { grid-column: span 2; } .controls, .results { padding: 15px; } .results-head { align-items: start; } }
 @media (forced-colors: active) { .priority { border: 1px solid CanvasText; padding: 2px 5px; } .target { border: 1px solid CanvasText; } }
+
+/* Make the horizontally scrollable data region discoverable on touch screens. */
+.scroll-hint { display: none; font-size: 12px; color: var(--ink-muted); margin: 0 0 9px; }
+@media (max-width: 800px) { .scroll-hint { display: block; } }
+@media (max-width: 380px) {
+  .filter-grid { grid-template-columns: minmax(0, 1fr); }
+  .field-search { grid-column: auto; }
+  .clear-button { width: 100%; }
+  .results-head { gap: 10px; }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --canvas: #111827;
+    --surface: #1b2538;
+    --surface-muted: #263449;
+    --ink: #f4f6fb;
+    --ink-muted: #bfcbda;
+    --line: #47566c;
+    --accent: #bacaff;
+    --accent-soft: #344767;
+    --warning: #efc26b;
+  }
+  .field input, .field select { background: #141d2e; color: var(--ink); border-color: #8491a6; }
+  .field input::placeholder { color: #b8c5d7; opacity: 1; }
+  td a { color: #c2ceff; }
+  .priority-high { color: #ffb69c; }
+  .priority-medium { color: #f5d18d; }
+  .skip-link { background: var(--ink); color: var(--canvas); }
+}
