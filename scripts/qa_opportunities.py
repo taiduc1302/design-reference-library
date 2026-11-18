@@ -74,8 +74,9 @@ def main():
                     assert page.locator("#rows tr").count() >= 1
                     page.get_by_role("combobox", name="Target capability").select_option("all")
                     assert page.locator("#rows tr").count() == 82
+                    search.focus()
                     page.keyboard.press("Tab")
-                    assert page.evaluate("document.activeElement !== null")
+                    assert page.evaluate("document.activeElement?.id") == "priority", "Keyboard Tab should move from search to priority"
                 page.screenshot(path=str(OUT / f"{name}.png"), full_page=True)
                 print(f"OK: {name}; 82 sources, no page errors/overflow")
                 context.close()
