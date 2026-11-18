@@ -81,7 +81,15 @@ async function init() {
     els['total-count'].textContent = String(records.length);
     els.filters.addEventListener('input', draw);
     els.filters.addEventListener('change', draw);
-    els.filters.addEventListener('reset', () => queueMicrotask(draw));
+    // Reset is dispatched before the browser restores form defaults. Prevent
+    // that deferred default action and update controls and results together.
+    els.filters.addEventListener('reset', (event) => {
+      event.preventDefault();
+      for (const control of [els.search, els.priority, els.target, els.kind, els.category]) {
+        control.value = control === els.search ? '' : 'all';
+      }
+      draw();
+    });
     draw();
   } catch (error) {
     els['result-status'].textContent = 'Unable to load the research catalog.';
