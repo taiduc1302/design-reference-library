@@ -1,5 +1,8 @@
 # Opportunity browser QA checkpoint — 2026-11-18
 
+> **Status update — 2026-11-19:** PR #1 was subsequently squash-merged into `main` at commit `5c9632aaf5caddf3d2ac320c9a072e626c2b939a` by explicit owner request, with incomplete end-to-end QA acknowledged. The checks marked **NOT RUN** or **BLOCKED** below remain unverified. The prior **Draft / HOLD / no merge** statements describe the original pre-merge checkpoint only. No new test execution is implied by this update. The follow-up issue #3 was closed as **not planned** to avoid an indefinitely open task; this report is the permanent record. Production adoption still requires appropriate full-checkout, HTTP browser, and accessibility validation.
+
+
 **Scope:** PR #1, issue #2, local gallery. Research-only; no third-party package or GitHub Actions installed or executed.
 
 ## Source verification
