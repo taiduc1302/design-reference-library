@@ -39,6 +39,18 @@ Open `http://localhost:8765/gallery/` to explore the dashboard, website, present
 
 Structured metadata: [`catalog/references.json`](catalog/references.json), [`catalog/components.json`](catalog/components.json), and pinned upstream commits in [`catalog/upstreams.json`](catalog/upstreams.json).
 
+## External opportunity research (not integrated)
+
+- [ChanMeng666 complete research matrix — 82 public repositories](docs/CHANMENG666_OPPORTUNITY_RESEARCH_2026-11-16.md) with application opportunities, limits and priority labels.
+- [Machine-readable opportunity inventory](catalog/chanmeng666-opportunity-matrix.json) covering generic target capabilities (no private repository names).
+- Offline integrity check: `python scripts/validate_chanmeng666_research.py`.
+
+These are **research leads**, not checked reusable components. No code, media, extensions, agent skills, or third-party dependencies have been copied, installed, integrated or security-audited. For tested design patterns, continue using `catalog/references.json` and the curation process below.
+
+Browse research-only candidates locally: run `python -m http.server 8765` from the repository root and open [`gallery/opportunities.html`](gallery/opportunities.html). This is a searchable index of **unverified research leads**, not vetted components. [Pilot acceptance specifications](docs/CHANMENG666_PILOT_ACCEPTANCE_2026-11-17.md) document the next three experiments.
+
+Run offline research checks with `npm test` and `python scripts/validate_chanmeng666_research.py`. Optional five-mode real-browser QA: `python scripts/qa_opportunities.py` after installing Playwright + Chromium locally. Do not claim browser QA passed if the browser cannot launch or local HTTP is blocked.
+
 ## How to use this library for a new project
 
 1. Read [`AGENTS.md`](AGENTS.md) and [`docs/PROJECT_HANDOFF.md`](docs/PROJECT_HANDOFF.md).

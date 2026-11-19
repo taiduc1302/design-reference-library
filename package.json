@@ -4,8 +4,8 @@
   "private": true,
   "description": "Curated open design references and reusable dependency-free UI components",
   "scripts": {
-    "test": "node --test components/tests/data.test.mjs components/tests/components.test.mjs",
-    "check": "node --test components/tests/data.test.mjs components/tests/components.test.mjs && python scripts/validate_catalog.py && python scripts/validate_components.py"
+    "test": "node --test components/tests/data.test.mjs components/tests/components.test.mjs tests/opportunities.test.mjs",
+    "check": "npm test && python scripts/validate_catalog.py && python scripts/validate_components.py && python scripts/validate_chanmeng666_research.py"
   },
   "engines": {
     "node": ">=18"

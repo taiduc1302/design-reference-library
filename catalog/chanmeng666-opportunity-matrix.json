@@ -1,0 +1,1401 @@
+{
+  "schema_version": 1,
+  "source_owner": "ChanMeng666",
+  "catalog_date": "2026-11-16",
+  "scope": "Public GitHub repositories observed; names mapped to generic capability areas only",
+  "classification_notice": "Research-only planning. No code, skills, models, or media copied. No tests, security audits, or integration performed. Repo-level license is not proof of file/media reuse rights. Forks may have different original authors. Priorities are analyst proposals, not adoption decisions.",
+  "privacy": "No private project names, client data, or user-sensitive information.",
+  "targets": [
+    {
+      "id": "tender-discovery",
+      "label": "Tender discovery and review"
+    },
+    {
+      "id": "civil-geometry",
+      "label": "Civil takeoff and geometric validation"
+    },
+    {
+      "id": "earthworks",
+      "label": "Earthworks surfaces and volumes"
+    },
+    {
+      "id": "estimate-qa",
+      "label": "Estimate QA and reporting"
+    },
+    {
+      "id": "agent-orchestration",
+      "label": "AI agents and automation"
+    },
+    {
+      "id": "ai-evaluation",
+      "label": "Model evaluation and routing"
+    },
+    {
+      "id": "design-library",
+      "label": "Design, promo, documentation and reusable UX"
+    },
+    {
+      "id": "web-ux",
+      "label": "User-facing web and local apps"
+    },
+    {
+      "id": "education",
+      "label": "Language and construction learning apps"
+    },
+    {
+      "id": "genealogy",
+      "label": "Historical source and genealogy research"
+    },
+    {
+      "id": "document-tracking",
+      "label": "Document lifecycle tracking"
+    },
+    {
+      "id": "developer-tooling",
+      "label": "Developer workflows and public portfolio"
+    },
+    {
+      "id": "other",
+      "label": "No clear target currently"
+    }
+  ],
+  "records": [
+    {
+      "id": "chanmeng666/archlang",
+      "source_url": "https://github.com/ChanMeng666/archlang",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "civil-geometry",
+        "earthworks"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "Text-to-plan validation, DXF/SVG, 2D/3D consistency; architectural DSL is not a civil quantity engine",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/a11y-loop",
+      "source_url": "https://github.com/ChanMeng666/a11y-loop",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "web-ux",
+        "design-library"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "Browser accessibility audit and repair loop; independent manual review remains required",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/echook",
+      "source_url": "https://github.com/ChanMeng666/echook",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "agent-orchestration"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Local agent completion, permission and rate-limit notifications; review hooks and privacy",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-ai-product-manager",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-ai-product-manager",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "agent-orchestration",
+        "ai-evaluation"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "Evaluation gates, autonomy boundaries and rollback plans",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-product-reality-check",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-product-reality-check",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "tender-discovery",
+        "ai-evaluation"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Evidence-led competitor research and launch assumptions",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-slack-waterline",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-slack-waterline",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "tender-discovery",
+        "document-tracking"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "Separate enumerated, delivered and reviewed records; adapt state invariants only",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-professional-repo-docs",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-professional-repo-docs",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "design-library",
+        "developer-tooling"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Agent-first documentation and contributor templates; no overwrites",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-typst",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-typst",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "civil-geometry",
+        "estimate-qa"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Technical PDF reports with verification and typesetting",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-geo-markdown-mirror",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-geo-markdown-mirror",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "developer-tooling",
+        "web-ux"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Machine-readable public docs; do not expose private content",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/server-google-news",
+      "source_url": "https://github.com/ChanMeng666/server-google-news",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "tender-discovery"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Optional news signals, not authoritative tender evidence; SerpAPI costs/key",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/server-google-jobs",
+      "source_url": "https://github.com/ChanMeng666/server-google-jobs",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "other"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Job-search MCP; unrelated to core products",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/ai-programming-teaching-project",
+      "source_url": "https://github.com/ChanMeng666/ai-programming-teaching-project",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "education"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Curriculum/docs architecture and interactive learning",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-academic-paper-review",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-academic-paper-review",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "ai-evaluation"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Technical critique methods and evidence review",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/awesome-aec-mcp",
+      "source_url": "https://github.com/ChanMeng666/awesome-aec-mcp",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "civil-geometry",
+        "earthworks"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "Discover relevant AEC/CAD/GIS MCP tools; curated fork not integration",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/awesome-cad",
+      "source_url": "https://github.com/ChanMeng666/awesome-cad",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "civil-geometry",
+        "earthworks"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Discover geometry libraries and CAD alternatives; fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/Awesome-AIGC4AEC",
+      "source_url": "https://github.com/ChanMeng666/Awesome-AIGC4AEC",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "civil-geometry",
+        "ai-evaluation"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "AEC literature leads; fork and citation checking required",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/awesome-mcp-servers",
+      "source_url": "https://github.com/ChanMeng666/awesome-mcp-servers",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "agent-orchestration"
+      ],
+      "priority": "LOW",
+      "applicability_note": "MCP discovery reference; fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/awesome-remote-mcp-servers",
+      "source_url": "https://github.com/ChanMeng666/awesome-remote-mcp-servers",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "agent-orchestration"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Remote MCP discovery; fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/awesome-claude-skills",
+      "source_url": "https://github.com/ChanMeng666/awesome-claude-skills",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "agent-orchestration"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Review third-party skills before adopting; fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/awesome-openclaw-skills",
+      "source_url": "https://github.com/ChanMeng666/awesome-openclaw-skills",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "agent-orchestration"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Skill registry ideas with supply-chain risks; fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/awesome-generative-ai",
+      "source_url": "https://github.com/ChanMeng666/awesome-generative-ai",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "ai-evaluation"
+      ],
+      "priority": "LOW",
+      "applicability_note": "General GenAI discovery; fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/awesome-typescript",
+      "source_url": "https://github.com/ChanMeng666/awesome-typescript",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "web-ux"
+      ],
+      "priority": "LOW",
+      "applicability_note": "TypeScript implementation reference; fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/awesome-a11y",
+      "source_url": "https://github.com/ChanMeng666/awesome-a11y",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "web-ux"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Accessibility checklists and references; fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/mcp-registry",
+      "source_url": "https://github.com/ChanMeng666/mcp-registry",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "agent-orchestration"
+      ],
+      "priority": "LOW",
+      "applicability_note": "MCP registry ideas; fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/event-qa-ai-template",
+      "source_url": "https://github.com/ChanMeng666/event-qa-ai-template",
+      "category": "ai-cad-mcp",
+      "targets": [
+        "education",
+        "tender-discovery"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Optional FAQ assistant; avoid unnecessary backend",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-app-promo-studio",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-app-promo-studio",
+      "category": "visual-design",
+      "targets": [
+        "design-library",
+        "web-ux"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "Config-driven screenshot marketing assets",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-svg-animation-studio",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-svg-animation-studio",
+      "category": "visual-design",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Animated SVG product cards; respect motion preferences",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-readme-showcase",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-readme-showcase",
+      "category": "visual-design",
+      "targets": [
+        "design-library",
+        "developer-tooling"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "Reproducible real screenshots and demo recordings",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-readme-theme-assets",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-readme-theme-assets",
+      "category": "visual-design",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Light/dark-mode README image checks",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-linkedin-post",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-linkedin-post",
+      "category": "visual-design",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Evidence-grounded release posts and generated visuals",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-logo-as-code",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-logo-as-code",
+      "category": "visual-design",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Editable parametric logo export",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chanmeng-monkey-illustrations",
+      "source_url": "https://github.com/ChanMeng666/chanmeng-monkey-illustrations",
+      "category": "visual-design",
+      "targets": [
+        "design-library",
+        "education"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Visual identity workflow only; do not copy brand mascot",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/chan-meng-personal-brand-logo",
+      "source_url": "https://github.com/ChanMeng666/chan-meng-personal-brand-logo",
+      "category": "visual-design",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Vector curve-fitting reference, not reusable brand artwork",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/gradient-svg-generator",
+      "source_url": "https://github.com/ChanMeng666/gradient-svg-generator",
+      "category": "visual-design",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Animated SVG accents for promo material",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/design-pages",
+      "source_url": "https://github.com/ChanMeng666/design-pages",
+      "category": "visual-design",
+      "targets": [
+        "design-library",
+        "web-ux"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Study CSS interactive patterns before selecting components",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/archlang-showcase",
+      "source_url": "https://github.com/ChanMeng666/archlang-showcase",
+      "category": "visual-design",
+      "targets": [
+        "civil-geometry",
+        "design-library"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Pattern for interactive example gallery",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/flip-book-template",
+      "source_url": "https://github.com/ChanMeng666/flip-book-template",
+      "category": "visual-design",
+      "targets": [
+        "education"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Optional interactive study materials",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/readme-profile-generator",
+      "source_url": "https://github.com/ChanMeng666/readme-profile-generator",
+      "category": "visual-design",
+      "targets": [
+        "developer-tooling"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Personal portfolio presentation",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/ChanMeng666",
+      "source_url": "https://github.com/ChanMeng666/ChanMeng666",
+      "category": "visual-design",
+      "targets": [
+        "developer-tooling"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Profile README structure reference",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/github-visitor-counter",
+      "source_url": "https://github.com/ChanMeng666/github-visitor-counter",
+      "category": "visual-design",
+      "targets": [
+        "developer-tooling"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Decorative analytics outside project priorities",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/github-readme-suno-cards",
+      "source_url": "https://github.com/ChanMeng666/github-readme-suno-cards",
+      "category": "visual-design",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Music cards unrelated to current use cases",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/reveal.js",
+      "source_url": "https://github.com/ChanMeng666/reveal.js",
+      "category": "visual-design",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Presentation patterns; prefer original upstream when evaluating fork",
+      "upstream_kind": "fork",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/her-waka",
+      "source_url": "https://github.com/ChanMeng666/her-waka",
+      "category": "visual-design",
+      "targets": [
+        "education"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Training documentation patterns",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/makey-makey-iot-slides",
+      "source_url": "https://github.com/ChanMeng666/makey-makey-iot-slides",
+      "category": "visual-design",
+      "targets": [
+        "education"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Classroom slide patterns, no direct integration",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/polygon-heartbeat",
+      "source_url": "https://github.com/ChanMeng666/polygon-heartbeat",
+      "category": "visual-design",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Original music production irrelevant to core tools",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/super-mario-makey-makey",
+      "source_url": "https://github.com/ChanMeng666/super-mario-makey-makey",
+      "category": "visual-design",
+      "targets": [
+        "education"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Game experiment, not a current product need",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/public-videos",
+      "source_url": "https://github.com/ChanMeng666/public-videos",
+      "category": "visual-design",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Video showcase organization",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-archlang-2d-3d",
+      "source_url": "https://github.com/ChanMeng666/film-archlang-2d-3d",
+      "category": "video-3d",
+      "targets": [
+        "civil-geometry",
+        "design-library"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "Show verified geometry transformed into 2D and 3D",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-archcanvas-studio",
+      "source_url": "https://github.com/ChanMeng666/film-archcanvas-studio",
+      "category": "video-3d",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Remotion production for short and long formats",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-a11y-loop-narrated",
+      "source_url": "https://github.com/ChanMeng666/film-a11y-loop-narrated",
+      "category": "video-3d",
+      "targets": [
+        "design-library",
+        "estimate-qa"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "On-screen measurements tied to real CLI verification",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-archlang-drawing-stands-up",
+      "source_url": "https://github.com/ChanMeng666/film-archlang-drawing-stands-up",
+      "category": "video-3d",
+      "targets": [
+        "civil-geometry",
+        "earthworks"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Blender visualization tied to source geometry",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-archlang-one-take",
+      "source_url": "https://github.com/ChanMeng666/film-archlang-one-take",
+      "category": "video-3d",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Three.js camera animation and reproducible rendering",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-archlang-in-chatgpt",
+      "source_url": "https://github.com/ChanMeng666/film-archlang-in-chatgpt",
+      "category": "video-3d",
+      "targets": [
+        "design-library",
+        "agent-orchestration"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Show actual AI tool workflow without fictional results",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-archlang-playground",
+      "source_url": "https://github.com/ChanMeng666/film-archlang-playground",
+      "category": "video-3d",
+      "targets": [
+        "design-library",
+        "civil-geometry"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Compiler-backed reproducible scenes",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-archlang-explainer-and-shorts",
+      "source_url": "https://github.com/ChanMeng666/film-archlang-explainer-and-shorts",
+      "category": "video-3d",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Explanatory clips and shorts",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-archcanvas-zoom-out",
+      "source_url": "https://github.com/ChanMeng666/film-archcanvas-zoom-out",
+      "category": "video-3d",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Multi-format animated UI narrative",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-echook-terminal",
+      "source_url": "https://github.com/ChanMeng666/film-echook-terminal",
+      "category": "video-3d",
+      "targets": [
+        "design-library",
+        "agent-orchestration"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Terminal workflow film rendering",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-echook-first",
+      "source_url": "https://github.com/ChanMeng666/film-echook-first",
+      "category": "video-3d",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Audio-video production reference",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-a11y-loop-launch",
+      "source_url": "https://github.com/ChanMeng666/film-a11y-loop-launch",
+      "category": "video-3d",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Product launch explainer",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-ai-programming",
+      "source_url": "https://github.com/ChanMeng666/film-ai-programming",
+      "category": "video-3d",
+      "targets": [
+        "education",
+        "design-library"
+      ],
+      "priority": "MEDIUM",
+      "applicability_note": "Educational product video layout",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-chan-meng-intro",
+      "source_url": "https://github.com/ChanMeng666/film-chan-meng-intro",
+      "category": "video-3d",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Personal portfolio film patterns",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/film-tam-ai-ti",
+      "source_url": "https://github.com/ChanMeng666/film-tam-ai-ti",
+      "category": "video-3d",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Mixed code and watercolor production",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/explainer-lzj-history-maps",
+      "source_url": "https://github.com/ChanMeng666/explainer-lzj-history-maps",
+      "category": "video-3d",
+      "targets": [
+        "genealogy"
+      ],
+      "priority": "HIGH",
+      "applicability_note": "Geospatial animation technique only; historical interpretations require sourcing",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/explainer-lzj-watercolour",
+      "source_url": "https://github.com/ChanMeng666/explainer-lzj-watercolour",
+      "category": "video-3d",
+      "targets": [
+        "genealogy"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Procedural watercolor visual style only",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/mv-save-me-a-little-of-today",
+      "source_url": "https://github.com/ChanMeng666/mv-save-me-a-little-of-today",
+      "category": "video-3d",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Art-film technique not currently needed",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/mv-anti-marriage-universe",
+      "source_url": "https://github.com/ChanMeng666/mv-anti-marriage-universe",
+      "category": "video-3d",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Music-video workflows not currently needed",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/mv-a-coffee-for-one",
+      "source_url": "https://github.com/ChanMeng666/mv-a-coffee-for-one",
+      "category": "video-3d",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Art-film technique not currently needed",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/mv-october-rain-february-line",
+      "source_url": "https://github.com/ChanMeng666/mv-october-rain-february-line",
+      "category": "video-3d",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Art-film technique not currently needed",
+      "upstream_kind": "project",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/douyin-mall",
+      "source_url": "https://github.com/ChanMeng666/douyin-mall",
+      "category": "archived",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Archived e-commerce platform not applicable",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/douyin-mall-frontend",
+      "source_url": "https://github.com/ChanMeng666/douyin-mall-frontend",
+      "category": "archived",
+      "targets": [
+        "web-ux"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Archived Vue frontend visual patterns only",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/douyin-mall-go-template",
+      "source_url": "https://github.com/ChanMeng666/douyin-mall-go-template",
+      "category": "archived",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Archived Go e-commerce stack not relevant",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/douyin-mall-java-template",
+      "source_url": "https://github.com/ChanMeng666/douyin-mall-java-template",
+      "category": "archived",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Archived Java microservices stack not relevant",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/automotive-repair-management-system",
+      "source_url": "https://github.com/ChanMeng666/automotive-repair-management-system",
+      "category": "archived",
+      "targets": [
+        "estimate-qa"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Archived job/parts tracking UI patterns only",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/tencent-meeting-video-downloader",
+      "source_url": "https://github.com/ChanMeng666/tencent-meeting-video-downloader",
+      "category": "archived",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Archived Tencent recording extension not applicable",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/interactive-story-generator",
+      "source_url": "https://github.com/ChanMeng666/interactive-story-generator",
+      "category": "archived",
+      "targets": [
+        "education"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Archived AI storytelling example for learning experiments",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/library-os",
+      "source_url": "https://github.com/ChanMeng666/library-os",
+      "category": "archived",
+      "targets": [
+        "education",
+        "genealogy"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Archived catalog layout and search patterns only",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/friendscope",
+      "source_url": "https://github.com/ChanMeng666/friendscope",
+      "category": "archived",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Archived social scoring application not applicable",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/image-generator",
+      "source_url": "https://github.com/ChanMeng666/image-generator",
+      "category": "archived",
+      "targets": [
+        "education"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Archived image generation interface patterns",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/juejin-algorithm-practice",
+      "source_url": "https://github.com/ChanMeng666/juejin-algorithm-practice",
+      "category": "archived",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Archived Python exercise collection, not integration",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/femtracker-agent",
+      "source_url": "https://github.com/ChanMeng666/femtracker-agent",
+      "category": "archived",
+      "targets": [
+        "agent-orchestration"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Archived multi-agent architecture reference only, not health features",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/forward-with-her-mentorship-program",
+      "source_url": "https://github.com/ChanMeng666/forward-with-her-mentorship-program",
+      "category": "archived",
+      "targets": [
+        "design-library"
+      ],
+      "priority": "LOW",
+      "applicability_note": "Archived responsive 3D visual reference",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    },
+    {
+      "id": "chanmeng666/css-tower-defense",
+      "source_url": "https://github.com/ChanMeng666/css-tower-defense",
+      "category": "archived",
+      "targets": [
+        "other"
+      ],
+      "priority": "NONE",
+      "applicability_note": "Archived CSS experiment, not engineering 3D",
+      "upstream_kind": "archived",
+      "status": "RESEARCH_LEAD",
+      "license_status": "NOT_FILE_LEVEL_VERIFIED",
+      "reviewed_on": "2026-11-16",
+      "implementation_status": "NOT_IMPLEMENTED",
+      "security_review": "NOT_RUN"
+    }
+  ]
+}
