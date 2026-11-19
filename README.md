@@ -51,6 +51,8 @@ Browse research-only candidates locally: run `python -m http.server 8765` from t
 
 Run offline research checks with `npm test` and `python scripts/validate_chanmeng666_research.py`. Optional five-mode real-browser QA: `python scripts/qa_opportunities.py` after installing Playwright + Chromium locally. Do not claim browser QA passed if the browser cannot launch or local HTTP is blocked.
 
+**QA status (PR #1, merged 2026-11-18):** Focused Node tests (23/23), catalog validation, and isolated Chromium checks passed. **Full `npm run check` from a complete checkout, real HTTP/ESM browser testing, and final manual accessibility review were NOT performed.** They are not required to keep the research catalog published, and are not being tracked as an active issue. If the gallery is later used as production UI, run these checks first. Evidence and limitations: [opportunity browser QA report](docs/QA_OPPORTUNITIES_2026-11-18.md).
+
 ## How to use this library for a new project
 
 1. Read [`AGENTS.md`](AGENTS.md) and [`docs/PROJECT_HANDOFF.md`](docs/PROJECT_HANDOFF.md).
