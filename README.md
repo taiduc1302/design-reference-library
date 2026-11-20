@@ -41,6 +41,9 @@ Structured metadata: [`catalog/references.json`](catalog/references.json), [`cat
 
 ## External opportunity research (not integrated)
 
+- [dchantlos construction digital twin / ArcGIS 4D–5D research (2026-11-20)](docs/DCHANTLOS_CONSTRUCTION_VISUALIZATION_RESEARCH_2026-11-20.md) — source-pinned research on model-linked plan/sections/3D, timelapse, cost/QA overlays, reality capture and reuse/licensing risks. Research-only, not integrated.
+
+
 - [ChanMeng666 complete research matrix — 82 public repositories](docs/CHANMENG666_OPPORTUNITY_RESEARCH_2026-11-16.md) with application opportunities, limits and priority labels.
 - [Machine-readable opportunity inventory](catalog/chanmeng666-opportunity-matrix.json) covering generic target capabilities (no private repository names).
 - Offline integrity check: `python scripts/validate_chanmeng666_research.py`.
