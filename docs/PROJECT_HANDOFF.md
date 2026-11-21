@@ -36,3 +36,7 @@
 - Treat tokens as a separate compatibility contract; changing them can affect every app.
 - Extract a component only when at least two projects need it, or it clearly reduces duplication.
 - Do not claim a production UI is verified just because a design-gallery demo renders.
+
+## Cross-project research to consult before planning new features
+
+- [dchantlos technical audit (14 repositories)](DCHANTLOS_FULL_SOURCE_AUDIT_2026-11-20.md) with the [12-pattern opportunity matrix](../catalog/dchantlos-opportunity-matrix.json). Reusable candidates include linked 2D/3D object identity, earthworks and GIS display, planned vs actual 4D, fail-closed unknown states, scorecard ranking, IFC/BCF data and reusable accessibility QA. **Research only:** do not copy unlicensed code, install vendor/agent skills or replace verified quantity calculations. Select a DCH-xx ID and follow the consuming repository's own AGENTS.md and roadmap.
