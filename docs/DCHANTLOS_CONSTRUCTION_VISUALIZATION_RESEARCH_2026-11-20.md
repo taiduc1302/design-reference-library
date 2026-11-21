@@ -2,6 +2,8 @@
 
 > Research lead only. Source inspection: 2026-11-20. No external code, graphics, models, ArcGIS services, browser extension, credentials, sensor feeds or third-party packages were copied or installed. No live interaction regression or performance benchmark was run. The examples describe **illustrative and/or simulated** construction data, not verified field reports.
 
+> **Follow-up technical audit (all 14 public repositories):** [full source findings](DCHANTLOS_FULL_SOURCE_AUDIT_2026-11-20.md) and [machine-readable cross-project matrix](../catalog/dchantlos-opportunity-matrix.json). The 14-repo audit supersedes this note's preliminary statement that other repositories were not deeply examined. Keep this initial note as the historical 4D/5D overview; it is not an implementation approval.
+
 ## Why keep this research
 
 These repositories demonstrate a useful separation: an authoritative model or data record, a selectable geometric object with stable identity, a time axis (4D), progress and cost context (5D), independent validation status, and multiple visual presentations. The strongest reusable ideas are **architecture, interaction and evidence contracts**, not visual effects or claims of engineering accuracy.
