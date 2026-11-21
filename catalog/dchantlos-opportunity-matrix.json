@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "source_owner": "dchantlos",
+  "research_date": "2026-11-20",
+  "status": "RESEARCH_LEAD_NOT_APPROVED_FOR_IMPLEMENTATION",
+  "scope": "14 public repositories, source-level targeted review, no source code copied or installed, no full browser regression",
+  "privacy": "Generic capability target names only; public repository; no private repositories, client or employer data.",
+  "validation": {
+    "source_inspection": "GitHub files, trees, metadata, selected key modules and manifests inspected; not an exhaustive security audit.",
+    "focused_smoke_tests": {
+      "performed": 11,
+      "passed": 11,
+      "mode": "Isolated JavaScript evaluation of selected pure public source functions only; no full npm/test, ArcGIS runtime or browser runs.",
+      "modules": [
+        "Badouzi/exposure.js",
+        "Badouzi/flight-motion.js",
+        "Badouzi/zoom-motion.js",
+        "construction-timelapse/js/linear-conditions.mjs"
+      ]
+    },
+    "not_run": [
+      "full upstream suites",
+      "npm installations and production builds",
+      "browser interactions or accessibility/320px tests",
+      "GIS/ArcGIS/Podium/IoT live service validation",
+      "performance/security/engineering certification"
+    ]
+  },
+  "target_capabilities": [
+    {
+      "id": "earthworks",
+      "name": "Earthworks geometry and quantities"
+    },
+    {
+      "id": "civil-takeoff",
+      "name": "Civil takeoff markups and QA"
+    },
+    {
+      "id": "tender-discovery",
+      "name": "Tender discovery and selection"
+    },
+    {
+      "id": "design-library",
+      "name": "Cross-project design/reference library"
+    },
+    {
+      "id": "model-advice",
+      "name": "AI model selection and analytical decisions"
+    },
+    {
+      "id": "learning",
+      "name": "Construction vocabulary learning"
+    }
+  ],
+  "source_repositories": [
+    {
+      "repo": "dchantlos/construction-timelapse",
+      "branch": "main",
+      "head_sha": "50ec8720531285abdb47ba7755fdaab5bc0feab0",
+      "origin": "original",
+      "license_evidence": "NO_LICENSE_FOUND",
+      "research_priority": "P1",
+      "finding": "4D/5D scene, simulated progress, I3S aggregate audit; do not trust element-level audit/BCF IDs",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/datacenter",
+      "branch": "main",
+      "head_sha": "c3f15344fcb6a75a9c1f15c85f31a79864e5006e",
+      "origin": "original",
+      "license_evidence": "NO_LICENSE_FOUND",
+      "research_priority": "P1",
+      "finding": "GIS screening, explainable eligibility/scoring, scenarios, ArcGIS cut/fill, Podium extension",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/arcgis-js-app-template",
+      "branch": "main",
+      "head_sha": "65dc64d82b379f2a9fda9f0e3504fb3b2d512584",
+      "origin": "original",
+      "license_evidence": "Apache-2.0",
+      "research_priority": "P1",
+      "finding": "Design tokens, docks, layer controls, screenshot QA; branded assets not automatically reusable",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/Badouzi",
+      "branch": "master",
+      "head_sha": "da4dda1f28c4d7e9d500d0bd521794f237a63238",
+      "origin": "original",
+      "license_evidence": "NO_LICENSE_FOUND",
+      "research_priority": "P2",
+      "finding": "3D navigation, line of sight, partial/unavailable evidence semantics, what-if scenarios",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/3dgs",
+      "branch": "main",
+      "head_sha": "a4e161f7195f27bdc60bdd0958b0ac1bc7d885c8",
+      "origin": "original",
+      "license_evidence": "NO_LICENSE_FOUND",
+      "research_priority": "P2",
+      "finding": "Gaussian Splat gallery, slice/profile/measure via ArcGIS, 3D flight",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/realitytimeline",
+      "branch": "main",
+      "head_sha": "83979a29234d860cd489e7cbb934fac5fee5cadc",
+      "origin": "original",
+      "license_evidence": "NO_LICENSE_FOUND",
+      "research_priority": "P2",
+      "finding": "Dated mesh/splat layer switching; ArcGIS volume API, not independent engineering volumes",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/arcgisdev",
+      "branch": "main",
+      "head_sha": "99f8f90b1b1fbe856e6fa6d3d6061c1e849d518f",
+      "origin": "original",
+      "license_evidence": "NO_LICENSE_FOUND",
+      "research_priority": "P3",
+      "finding": "React/Tailwind/Framer methodology and portfolio presentation patterns",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/HSK2-game",
+      "branch": "main",
+      "head_sha": "19434e14d65ef8c9e685ac98fc280e4d729b0834",
+      "origin": "original",
+      "license_evidence": "NO_LICENSE_FOUND",
+      "research_priority": "P3",
+      "finding": "Story quiz, vocabulary matching, browser TTS, local progress",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/shadow-map",
+      "branch": "main",
+      "head_sha": "d3aee0b934a3779ad36e1df1b40d1464c9cc5410",
+      "origin": "original",
+      "license_evidence": "NO_LICENSE_FOUND",
+      "research_priority": "P3",
+      "finding": "Single-page ArcGIS ShadowCast example; not a reusable framework",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/my-3d-map",
+      "branch": "main",
+      "head_sha": "7c9a1b24bcbeb6b1679a315c8977210b29c5cbb9",
+      "origin": "original",
+      "license_evidence": "NO_LICENSE_FOUND",
+      "research_priority": "P3",
+      "finding": "Single-page ArcGIS 3D scene and layer widget example",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/ifc-lite-gis",
+      "branch": "main",
+      "head_sha": "1b91ece03912bd3c9ee2d5e8e2d5062cac97092c",
+      "origin": "fork: LTplus-AG/ifc-lite",
+      "license_evidence": "MPL-2.0",
+      "research_priority": "P1",
+      "finding": "IFC4X3, units, georeferencing, section/measurement, IDS and BCF; evaluate upstream, not stale fork",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/housekeeping-for-arcgis",
+      "branch": "main",
+      "head_sha": "d4fe2c93e8ac67959c91b8504e69af2721aaac9e",
+      "origin": "fork: cartinuum/housekeeping-for-arcgis",
+      "license_evidence": "Apache-2.0_FILE; API_NOASSERTION",
+      "research_priority": "P2",
+      "finding": "Inventory, tables, triage, dependency graph, reviewer basket, email drafts",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/arcgis-ai-components-demo",
+      "branch": "main",
+      "head_sha": "79735db6a156fc8cd4e3827231636429fe8f4c43",
+      "origin": "fork: CodeHeistPy/arcgis-ai-components-demo",
+      "license_evidence": "MIT",
+      "research_priority": "P2",
+      "finding": "Map assistant, metadata-driven retrieval and OAuth; beta/paid organization requirements",
+      "status": "RESEARCH_LEAD"
+    },
+    {
+      "repo": "dchantlos/sdktemplate",
+      "branch": "main",
+      "head_sha": "7d7fe49397044b53ef3f168d443af68841df09e4",
+      "origin": "fork: arnofiva/codekit",
+      "license_evidence": "Apache-2.0",
+      "research_priority": "P3",
+      "finding": "Generic React/Vite/Calcite ArcGIS starter, mostly superseded for UI research",
+      "status": "RESEARCH_LEAD"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "DCH-01",
+      "name": "One geometry, linked 2D plan / section / 3D selection",
+      "priority": "P1",
+      "targets": [
+        "earthworks",
+        "civil-takeoff"
+      ],
+      "sources": [
+        "construction-timelapse",
+        "ifc-lite-gis"
+      ],
+      "requirements": "Stable object IDs; source revision/hash; units/CRS/datum; independent geometry/volume reconciliation.",
+      "pilot": "Synthetic trench: click an element in any view; same ID and numbers in all views; no count-engine changes."
+    },
+    {
+      "id": "DCH-02",
+      "name": "Read-only timeline of construction stages (4D)",
+      "priority": "P2",
+      "targets": [
+        "earthworks",
+        "civil-takeoff"
+      ],
+      "sources": [
+        "construction-timelapse",
+        "realitytimeline"
+      ],
+      "requirements": "Typed stages, source and date provenance, explicit simulated/planned/verified-actual flags.",
+      "pilot": "Synthetic existing -> excavation -> bedding -> installation -> backfill -> restore; verify stage transitions and no invented progress."
+    },
+    {
+      "id": "DCH-03",
+      "name": "Quantity/cost context lenses (5D) with independent evidence",
+      "priority": "P3",
+      "targets": [
+        "civil-takeoff",
+        "tender-discovery"
+      ],
+      "sources": [
+        "construction-timelapse"
+      ],
+      "requirements": "Approved quantity, rate source, cost code, period, currency and estimator authorization; no pay-application mock as real.",
+      "pilot": "Synthetic-only report: unknown money remains unknown; reconciled totals; human-only pricing/signoff."
+    },
+    {
+      "id": "DCH-04",
+      "name": "Optional GIS/terrain + visual cut/fill comparison",
+      "priority": "P2",
+      "targets": [
+        "earthworks",
+        "civil-takeoff"
+      ],
+      "sources": [
+        "datacenter",
+        "realitytimeline"
+      ],
+      "requirements": "Proven CRS, vertical datum, surveyed controls, DEM accuracy/cell size and quantified discrepancy with core engine.",
+      "pilot": "Side-by-side synthetic terrain volumes and local solver; never replace engineering quantities with ArcGIS preview."
+    },
+    {
+      "id": "DCH-05",
+      "name": "Explainable hard-gate screening and ranking",
+      "priority": "P1",
+      "targets": [
+        "tender-discovery",
+        "model-advice"
+      ],
+      "sources": [
+        "datacenter"
+      ],
+      "requirements": "Must-pass gates separate from weighted preferences; PASS/POTENTIAL/UNKNOWN/EXCLUDED states; source freshness.",
+      "pilot": "Synthetic candidate ranking; test failed gate outranks no one; unknown never shown as verified eligible."
+    },
+    {
+      "id": "DCH-06",
+      "name": "Reusable UI shell, themes, panels and evidence screenshots",
+      "priority": "P1",
+      "targets": [
+        "design-library",
+        "civil-takeoff",
+        "tender-discovery",
+        "model-advice"
+      ],
+      "sources": [
+        "arcgis-js-app-template",
+        "Badouzi"
+      ],
+      "requirements": "Original or correctly licensed UI, no copied Esri brand assets, 320/390/768/1440 widths, dark/forced-colors/reduced-motion, keyboard.",
+      "pilot": "Isolated 2-3 component slice + automated screenshot checks that exit nonzero on failure."
+    },
+    {
+      "id": "DCH-07",
+      "name": "Time-stamped reality-capture / as-is overlay",
+      "priority": "P3",
+      "targets": [
+        "earthworks",
+        "civil-takeoff"
+      ],
+      "sources": [
+        "3dgs",
+        "realitytimeline",
+        "Badouzi"
+      ],
+      "requirements": "Capture dates, alignment error, coverage/confidence, photo/model rights, no visual-only quantity approval.",
+      "pilot": "Synthetic before/after captures with explicit unknown/misaligned states and a rollback option."
+    },
+    {
+      "id": "DCH-08",
+      "name": "IFC/IDS/BCF adapters and exact object validation",
+      "priority": "P2",
+      "targets": [
+        "earthworks",
+        "civil-takeoff"
+      ],
+      "sources": [
+        "ifc-lite-gis",
+        "construction-timelapse"
+      ],
+      "requirements": "Exact per-element joins and facet validation, IFC4X3 units/georeferencing, valid BCF component GUIDs and cameras; MPL obligations.",
+      "pilot": "Small IFC fixture with disjoint missing fields; verify intersection and BCF GUIDs against source, fail on estimated georef."
+    },
+    {
+      "id": "DCH-09",
+      "name": "Review basket, dependency graph and action drafts",
+      "priority": "P2",
+      "targets": [
+        "tender-discovery",
+        "civil-takeoff",
+        "model-advice"
+      ],
+      "sources": [
+        "housekeeping-for-arcgis"
+      ],
+      "requirements": "Provenance, owners, stale-data labels, dependency evidence, draft-only communication; no auto-send/auto-approve.",
+      "pilot": "Synthetic shortlist to review to human action; verify missing dependencies prevent 'ready'."
+    },
+    {
+      "id": "DCH-10",
+      "name": "Fail-closed unknown/partial data states",
+      "priority": "P1",
+      "targets": [
+        "earthworks",
+        "civil-takeoff",
+        "tender-discovery",
+        "model-advice"
+      ],
+      "sources": [
+        "Badouzi",
+        "datacenter"
+      ],
+      "requirements": "Missing survey/value/source is null and explicit; partial totals shown as partial; no unknown -> zero, no premature PASS.",
+      "pilot": "Deterministic fixtures with absent elevations, missing amounts, expired services and conflicting records."
+    },
+    {
+      "id": "DCH-11",
+      "name": "Progressive vocabulary practice, story and TTS",
+      "priority": "P3",
+      "targets": [
+        "learning"
+      ],
+      "sources": [
+        "HSK2-game"
+      ],
+      "requirements": "Original content, rights-cleared TTS; stable term IDs, multilingual support and offline/progress consistency.",
+      "pilot": "Original construction dialogue and spaced-review exercise, no unlicensed storyline/code reuse."
+    },
+    {
+      "id": "DCH-12",
+      "name": "Read-only AI assistant over well-described structured data",
+      "priority": "P3",
+      "targets": [
+        "tender-discovery",
+        "model-advice",
+        "civil-takeoff"
+      ],
+      "sources": [
+        "arcgis-ai-components-demo",
+        "construction-timelapse"
+      ],
+      "requirements": "Tool-result evidence, explicit simulation flag, missing-data refusal, OAuth/security/cost review, no safety/bid approval.",
+      "pilot": "Offline synthetic tool-call fixture with citation-level provenance, no cloud account or invented thresholds."
+    }
+  ]
+}
