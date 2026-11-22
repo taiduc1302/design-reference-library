@@ -42,7 +42,7 @@ Structured metadata: [`catalog/references.json`](catalog/references.json), [`cat
 ## External opportunity research (not integrated)
 
 
-- **[dchantlos complete source audit — all 14 repositories](docs/DCHANTLOS_FULL_SOURCE_AUDIT_2026-11-20.md)** and [cross-project, machine-readable opportunity matrix](catalog/dchantlos-opportunity-matrix.json): 12 research-only patterns (DCH-01–DCH-12), pinned upstream commits, reliability/licensing cautions, and explicit unrun QA gates. Extends the initial construction 4D/5D note. Not adopted or installed.
+- **[dchantlos complete source audit — all 14 repositories](docs/DCHANTLOS_FULL_SOURCE_AUDIT_2026-11-20.md)** and [cross-project, machine-readable opportunity matrix](catalog/dchantlos-opportunity-matrix.json): 13 research-only patterns (DCH-01–DCH-13), pinned upstream commits, reliability/licensing cautions, and explicit unrun QA gates. Includes a 2026-11-22 source follow-up on oriented site photography, locally generated AI annotations and image-identity risks. Extends the initial construction 4D/5D note. Not adopted or installed.
 - [dchantlos construction digital twin / ArcGIS 4D–5D research (2026-11-20)](docs/DCHANTLOS_CONSTRUCTION_VISUALIZATION_RESEARCH_2026-11-20.md) — source-pinned research on model-linked plan/sections/3D, timelapse, cost/QA overlays, reality capture and reuse/licensing risks. Research-only, not integrated.
 
 
