@@ -19,6 +19,10 @@ The research inventory in `catalog/chanmeng666-opportunity-matrix.json` and its 
 - Test the gallery with `npm test` and `python scripts/validate_chanmeng666_research.py`; browser screenshot testing is optional and must be identified as `NOT_RUN` when unavailable.
 - Pilot a single isolated feature with synthetic evidence, clear rollback conditions and project-specific QA. Follow target repository coordination rules before editing it.
 
+### dchantlos source research (not a reusable component)
+
+For GIS, IFC, 4D/5D, geometry-linked timelines and photo review, consult [the full 14-repository source audit](docs/DCHANTLOS_FULL_SOURCE_AUDIT_2026-11-20.md) and [machine-readable DCH-01–DCH-13 candidate matrix](catalog/dchantlos-opportunity-matrix.json) **before** the initial [4D/5D overview](docs/DCHANTLOS_CONSTRUCTION_VISUALIZATION_RESEARCH_2026-11-20.md). The audit contains a dated 2026-11-22 upstream photo-analysis delta. These are **RESEARCH_LEAD** only. Do not copy from repositories lacking verified reuse rights; real photos, model weights and Esri media require separate authorization. Do not infer engineered quantities, actual installed progress, paid amounts, per-object IDS failures, BCF object IDs, or safe work from rendered views or precomputed AI labels. No active priority or permission to install SDKs is created by this reference.
+
 ## Operating contract
 
 - Start with the user's audience, tasks, success criteria, available data, and required output medium.

@@ -24,7 +24,16 @@
       "browser interactions or accessibility/320px tests",
       "GIS/ArcGIS/Podium/IoT live service validation",
       "performance/security/engineering certification"
-    ]
+    ],
+    "followup_2026_11_22": {
+      "source": "dchantlos/construction-timelapse",
+      "baseline_sha": "50ec8720531285abdb47ba7755fdaab5bc0feab0",
+      "observed_sha": "f58cfb6aecdd1663db05c1e45a3653d9bf39cd15",
+      "new_capability": "Oriented site photos plus saved local-ML captions/object boxes with source-image review manifest",
+      "tests_executed": 0,
+      "live_browser_checked": false,
+      "warning": "Browser checks metadata but does not independently hash downloaded JPEG; no licensed reuse of third-party photos/code implied."
+    }
   },
   "target_capabilities": [
     {
@@ -376,6 +385,21 @@
       ],
       "requirements": "Tool-result evidence, explicit simulation flag, missing-data refusal, OAuth/security/cost review, no safety/bid approval.",
       "pilot": "Offline synthetic tool-call fixture with citation-level provenance, no cloud account or invented thresholds."
+    },
+    {
+      "id": "DCH-13",
+      "name": "Source-linked oriented site photos and reviewable AI annotation",
+      "priority": "P2",
+      "targets": [
+        "earthworks",
+        "civil-takeoff",
+        "design-library"
+      ],
+      "sources": [
+        "construction-timelapse"
+      ],
+      "requirements": "Source image/camera GlobalIDs, capture date, JPEG SHA-256 verified against actual bytes, dimensions and pixel coordinate transform, explicit work-area/manual review state, photo rights and redaction; AI boxes never establish dimensions, installed progress, safety, or approvals.",
+      "pilot": "Synthetic attached-image fixture: same station different attachments, unchanged metadata with changed image bytes, rotated image, wrong IDs, false positives and unreviewed work area; no takeoff or billing effects."
     }
   ]
 }

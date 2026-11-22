@@ -23,7 +23,7 @@ This inventory is deliberately generic and does not reference private project re
 | [arcgis-ai-components-demo](https://github.com/dchantlos/arcgis-ai-components-demo) | `79735db6a156fc8cd4e3827231636429fe8f4c43` | Assistant grounded in GIS layers / field metadata and vector embeddings, with explicit OAuth prerequisites | MIT file present; ArcGIS AI components beta, named-user subscription and embeddings setup; source answers need independent verification | LOW |
 | [ifc-lite-gis](https://github.com/dchantlos/ifc-lite-gis) | `1b91ece03912bd3c9ee2d5e8e2d5062cac97092c` | IFC4/IFC4X3 parser, property inspection, WebGPU rendering, IFC/GLB workflows | **Fork** of [LTplus-AG/ifc-lite](https://github.com/LTplus-AG/ifc-lite), not an original dchantlos implementation. MPL-2.0; inspect upstream and notices | MEDIUM |
 
-Additional public repositories identified but not deeply examined: `arcgisdev` (methodology), `housekeeping-for-arcgis` (inventory/review UI), `sdktemplate` (ArcGIS starter), `shadow-map` and `my-3d-map` (very small or undeveloped), `HSK2-game` (unrelated). This is a **shortlist**, not a code/security certification for all repositories.
+**Historical scope note (2026-11-20 initial pass):** This initial shortlist did not deeply examine `arcgisdev`, `housekeeping-for-arcgis`, `sdktemplate`, `shadow-map`, `my-3d-map` or `HSK2-game`. **The later [full 14-repository audit](DCHANTLOS_FULL_SOURCE_AUDIT_2026-11-20.md) subsequently inspected all six** at source-sampling level, discovered additional fork provenance and correctness limitations, and added a 2026-11-22 update on oriented site photos / AI annotation. Consult it as the technical source of truth; neither audit constitutes a complete code/security certification.
 
 ### Main demo routes
 
