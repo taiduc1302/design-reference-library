@@ -2,7 +2,7 @@
 
 A technical companion to the [Design Reference Library](../README.md). This is the shared reference layer for software architecture, agent engineering, testing, data systems, civil geometry and operational tools. It is **not** a product runtime, approved dependency list, or a second copy of existing research.
 
-**Baseline 2026-11-24:** 19 original proposed patterns, 13 source references, 11 target capability groups. All initial patterns are research leads; none is certified, integrated or tested here. The [machine-readable catalog](catalog.json) is authoritative. The [roadmap](ROADMAP.md) records sequencing, pilot gates and known gaps.
+**Baseline 2026-11-24:** 19 original proposed patterns, 13 source references, 11 target capability groups. All initial patterns remain research leads, not certified or adopted in consuming projects. Three original standalone utility prototypes have separately scoped unit-test evidence. The [machine-readable catalog](catalog.json) is authoritative. The [roadmap](ROADMAP.md) records sequencing, pilot gates and known gaps.
 
 ## How to use this library
 
@@ -85,21 +85,27 @@ A technical companion to the [Design Reference Library](../README.md). This is t
 - [Gus Bavia and design sources](../catalog/references.json); [reusable components and QA scope](../catalog/components.json).
 - Build Your Own X, ECC, Hive, and related learning references are listed below. A course or link directory is not production software or an umbrella license.
 
+## Audit and utility prototypes
+
+- [Portfolio inventory and targeted source review (27 repositories)](PORTFOLIO_AUDIT_2026-11-24.md).
+- [Source license triage and unresolved rights](LICENSE_REVIEW_2026-11-24.md).
+- [Original reusable utility prototypes and test scope](modules/README.md).
+
 ## Source register
 
-- **SRC-001 — [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x)**: README categories and AI section observed 2026-11-24; directory is not a license for linked works.
-- **SRC-002 — [Building a Coding Agent From Scratch](https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course)**: Public README observed; exact implementation files, commit and dependencies not reviewed.
-- **SRC-003 — [LLM Evaluation Harness tutorial](https://machinelearningmastery.com/building-a-custom-llm-evaluation-harness-in-python-from-scratch/)**: Link and topic observed in SRC-001; direct article/license review pending.
-- **SRC-004 — [RAG From Scratch](https://github.com/langchain-ai/rag-from-scratch)**: Public repository landing page observed; notebook execution and license review pending.
-- **SRC-005 — [Vector Database from Scratch](https://skyzh.github.io/vector-db-from-scratch/)**: Course preface observed independently; exact and approximate search benchmarking; not verified as a SRC-001 entry.
-- **SRC-006 — [Computer Graphics from Scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/)**: Contents observed; rendering theory only, not an engineering quantity engine.
-- **SRC-007 — [ECC (formerly Everything Claude Code)](https://github.com/affaan-m/ECC)**: README and agent.yaml/package metadata observed; MIT declared by manifest, exact reuse rights and hook safety pending. Existing local reference fork: https://github.com/taiduc1302/ECC
-- **SRC-008 — [Hive](https://github.com/aden-hive/hive)**: README/configuration overview observed; shared ledger, recovery and scoped memory. Existing reference fork: https://github.com/taiduc1302/hive
-- **SRC-009 — [ChanMeng666 research inventory](../catalog/chanmeng666-opportunity-matrix.json)**: Existing 82-repository research inventory; use its precise source records and statuses, not a blanket approval.
-- **SRC-010 — [dchantlos research inventory](../catalog/dchantlos-opportunity-matrix.json)**: Existing 13-pattern matrix and 14-repository audit; earlier limited smoke evidence remains scoped to its source record.
-- **SRC-011 — [Civil takeoff traceability method](https://github.com/taiduc1302/civil-takeoff-markups-mcp)**: Public README observed; native readback, traceability, fail-closed status; live tool QA not performed here.
-- **SRC-012 — [AI Model Advisor](https://github.com/taiduc1302/ai-model-advisor)**: Public README observed; heuristic model routing and evaluation separation; no new benchmark.
-- **SRC-013 — [Design Reference Library](../README.md)**: Existing design catalog, components, and QA records remain authoritative for UI.
+- **SRC-001 — [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x)**: Pinned README declares CC0 for the directory; linked works retain independent rights.
+- **SRC-002 — [Building a Coding Agent From Scratch](https://github.com/itsdecodingai/building-a-coding-agent-from-scratch-course)**: Working canonical repository license read; original directory alias did not independently return a readable license.
+- **SRC-003 — [LLM Evaluation Harness tutorial](https://machinelearningmastery.com/building-a-custom-llm-evaluation-harness-in-python-from-scratch/)**: Article reference only; no reusable license verified.
+- **SRC-004 — [RAG From Scratch](https://github.com/langchain-ai/rag-from-scratch)**: No license path in pinned non-truncated tree; README did not declare license.
+- **SRC-005 — [Vector Database from Scratch](https://skyzh.github.io/vector-db-from-scratch/)**: Directory entry confirmed; upstream LICENSE blob 261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64 read.
+- **SRC-006 — [Computer Graphics from Scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/)**: Upstream split license file read; demo JS MIT, text and images CC BY-NC-ND 4.0.
+- **SRC-007 — [ECC (formerly Everything Claude Code)](https://github.com/affaan-m/ECC)**: Upstream MIT LICENSE blob b832b6f642312312367c07688dc7426db40a82ed read.
+- **SRC-008 — [Hive](https://github.com/aden-hive/hive)**: Upstream Apache-2.0 LICENSE blob f72c3e53be0426cfe5a26b6369918ac0d12a7bb5 read.
+- **SRC-009 — [ChanMeng666 research inventory](../catalog/chanmeng666-opportunity-matrix.json)**: Selected archlang and a11y-loop MIT licenses read; other inventory entries not newly cleared.
+- **SRC-010 — [dchantlos research inventory](../catalog/dchantlos-opportunity-matrix.json)**: Existing 14-repository audit retained; construction-timelapse has no verified reuse license.
+- **SRC-011 — [Civil takeoff traceability method](https://github.com/taiduc1302/civil-takeoff-markups-mcp)**: Public MIT license read; QA lifecycle source sampled.
+- **SRC-012 — [AI Model Advisor](https://github.com/taiduc1302/ai-model-advisor)**: Public Apache-2.0 license read; benchmark runner source sampled.
+- **SRC-013 — [Design Reference Library](../README.md)**: Existing design catalog and notices govern third-party material.
 
 ## Promotion and contribution contract
 
