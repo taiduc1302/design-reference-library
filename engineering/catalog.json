@@ -251,6 +251,39 @@
       "pinned_revision": null,
       "reuse_status": "REFERENCE_ONLY_LICENSE_AND_FILE_SCOPE_PENDING",
       "discovery_source": "https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md"
+    },
+    {
+      "id": "SRC-022",
+      "title": "CCBench",
+      "url": "https://github.com/codecrafters-io/ccbench",
+      "kind": "upstream",
+      "observation": "Pinned targeted source review; independent verifier and stage regressions, but compile failure can write reward 1; published impact unknown. No reuse clearance.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": "da3895ae2f5f072ac6152c32349546344802f722",
+      "reuse_status": "REFERENCE_ONLY_NO_LICENSE_FOUND",
+      "source_review": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-023",
+      "title": "Claude Code Tester",
+      "url": "https://github.com/codecrafters-io/claude-code-tester",
+      "kind": "upstream",
+      "observation": "Pinned targeted source review: randomized workspace, request recorder, actual filesystem and LSP checks; raw request capture, live provider and bypass permissions are not safe defaults.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": "9fe518e488bc5c40778140e2894978f9cb57c956",
+      "reuse_status": "REFERENCE_ONLY_NO_LICENSE_FOUND",
+      "source_review": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-024",
+      "title": "Build Your Own Claude Code",
+      "url": "https://github.com/codecrafters-io/build-your-own-claude-code",
+      "kind": "upstream",
+      "observation": "Pinned design and course review: seven Skills stages, LSP versioned feedback; five LSP tester stages vs six design stages; beta/deferred scope. No copied code.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": "85006dd23b3bbd9775f0af1266ceb605a25c1b22",
+      "reuse_status": "REFERENCE_ONLY_MIT_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "source_review": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
     }
   ],
   "patterns": [
@@ -911,6 +944,189 @@
       "status": "RESEARCH_LEAD",
       "verification": "NOT_RUN",
       "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-032",
+      "category": "evaluation",
+      "title": "Independent artifact verifier and oracle controls",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-022",
+        "SRC-023",
+        "SRC-012"
+      ],
+      "targets": [
+        "ai-evaluation",
+        "civil-geometry",
+        "estimate-qa",
+        "developer-tooling"
+      ],
+      "proposal": "Separate agent output from a trusted verifier that checks actual artifacts and invariants; prevalidate an original known-good and known-bad control.",
+      "acceptance": "Known-good control passes, broken build and incorrect or unchanged artifact fail; self-reported success alone cannot pass. Verifier cannot be changed by candidate.",
+      "stop_condition": "Do not copy upstream task snapshots or treat an oracle pass as engineering certification.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED",
+      "research_note": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "ENG-033",
+      "category": "evaluation",
+      "title": "Frozen trial denominator and fail-closed outcomes",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-022",
+        "SRC-012"
+      ],
+      "targets": [
+        "ai-evaluation",
+        "developer-tooling",
+        "agent-orchestration"
+      ],
+      "proposal": "Freeze scheduled trial IDs before runs. Distinguish verified PASS, candidate FAIL, BUILD_FAIL, TIMEOUT, INFRA_ERROR, NOT_RUN, INVALID. Keep every attempt and account for missing rows.",
+      "acceptance": "A compile failure with success reward is INVALID; missing trials stay NOT_RUN; duplicates and unknown IDs are rejected; denominator unchanged.",
+      "stop_condition": "No ranking promotion from incomplete cohort or silently removed failures.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED",
+      "research_note": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "ENG-034",
+      "category": "agent-engineering",
+      "title": "Correlated tool action and independent readback",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-023",
+        "SRC-011",
+        "SRC-024"
+      ],
+      "targets": [
+        "agent-orchestration",
+        "civil-geometry",
+        "estimate-qa",
+        "developer-tooling"
+      ],
+      "proposal": "Record sanitized run, action and result IDs, scoped operation, status and artifact revision; correlate each result to its request and separate actual readback from a claimed result.",
+      "acceptance": "Synthetic wrong call ID, missing result, denied action and unexpected artifact change fail; matching action with independent evidence can pass.",
+      "stop_condition": "Do not capture secrets/raw private prompts; no arbitrary tool execution or automatic human approval.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED",
+      "research_note": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "ENG-035",
+      "category": "evaluation",
+      "title": "Seeded negative controls and decoy fixtures",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-023",
+        "SRC-022"
+      ],
+      "targets": [
+        "ai-evaluation",
+        "civil-geometry",
+        "education",
+        "developer-tooling"
+      ],
+      "proposal": "Use original parameterized synthetic fixtures with fixed replay seeds, decoys and adversarial failures that distinguish genuine capability from hardcoded answers.",
+      "acceptance": "Repeat same seed produces same fixture; alternate seed changes IDs or values; wrong decoy and hardcoded output fail.",
+      "stop_condition": "Do not infer broad anti-cheat or security assurance from limited fixtures; no private submissions.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED",
+      "research_note": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "ENG-036",
+      "category": "developer-workflow",
+      "title": "Version-bound symbol navigation and diagnostics",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-024",
+        "SRC-023"
+      ],
+      "targets": [
+        "developer-tooling",
+        "agent-orchestration"
+      ],
+      "proposal": "Resolve definitions and callers with available language tooling; bind diagnostics to current file/revision and keep successful write separate from diagnostic verification.",
+      "acceptance": "Moved symbol resolves at current position; stale or wrong-file diagnostics cannot clear current check; missing publication stays unknown; final regression independent.",
+      "stop_condition": "Unversioned diagnostics are ambiguous; do not start untrusted configured servers or equate empty notification with clean code.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED",
+      "research_note": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "ENG-037",
+      "category": "agent-engineering",
+      "title": "Metadata-first skill selection and scoped activation",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-024",
+        "SRC-023",
+        "SRC-008"
+      ],
+      "targets": [
+        "agent-orchestration",
+        "developer-tooling"
+      ],
+      "proposal": "Discover approved metadata, load only selected skill content, validate arguments and capabilities; use bounded child context without inheriting unnecessary data.",
+      "acceptance": "Unselected decoy body absent, selected skill loaded, unapproved script denied, child receives only explicit scoped inputs and reports result.",
+      "stop_condition": "Existing registry/subagents first; no skill installation, execution or permissions inferred from metadata.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED",
+      "research_note": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "ENG-038",
+      "category": "security",
+      "title": "Immutable verifier and environment integrity",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-022",
+        "SRC-023",
+        "SRC-007"
+      ],
+      "targets": [
+        "developer-tooling",
+        "agent-orchestration",
+        "ai-evaluation"
+      ],
+      "proposal": "Freeze verifier, fixture and environment identity; keep candidate writes separate; pin verified dependencies and artifacts before execution.",
+      "acceptance": "Modified verifier or fixture produces INVALID; unknown artifact digest blocks execution; timeout and infrastructure failures retain separate evidence.",
+      "stop_condition": "Do not download executable testers without verified provenance; no network or elevated rights by default.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED",
+      "research_note": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "ENG-039",
+      "category": "evaluation",
+      "title": "Separate offline replay, live and native acceptance evidence",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-023",
+        "SRC-024",
+        "SRC-012"
+      ],
+      "targets": [
+        "ai-evaluation",
+        "civil-geometry",
+        "estimate-qa",
+        "developer-tooling"
+      ],
+      "proposal": "Tag evidence by actual environment: offline fixture, live provider, native tool, or independent production acceptance; normalize only irrelevant variability.",
+      "acceptance": "Offline passing fixture cannot satisfy live or native requirement; unavailable dependency is NOT_RUN; actual attempts and cost remain visible.",
+      "stop_condition": "Do not count recorded replay as live, or use model output as proof of native measurement.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED",
+      "research_note": "research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md"
     }
   ]
 }
