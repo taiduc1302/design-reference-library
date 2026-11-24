@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Knowledge Explorer | Reference Library</title>
+<link rel="stylesheet" href="../tokens/design-tokens.css"><link rel="stylesheet" href="knowledge.css">
+<script type="module" src="knowledge.mjs"></script></head>
+<body><a class="skip" href="#results">Skip to results</a>
+<header><div class="wrap bar"><a href="./">Reference Library / Overview</a><a href="../engineering/PRIORITIES.md">Priorities</a></div></header>
+<main class="wrap"><div class="intro"><p class="eyebrow">PORTFOLIO KNOWLEDGE BASE</p><h1>Find the right technical solution.</h1><p>Search engineering patterns, public research leads, design references and reusable UI components in one place.</p></div>
+<section class="notice" aria-label="Evidence policy"><strong>Research is not approval.</strong> Status, license and test evidence come from each canonical catalog. Verify exact source rights and target tests before adoption.</section>
+<section class="panel" aria-labelledby="filters-title"><h2 id="filters-title">Explore the library</h2><form id="filters">
+<label class="search">Search by ID, idea, source or risk<input type="search" id="query" placeholder="e.g. revision evidence, 3D, ENG-006" autocomplete="off"></label>
+<div class="filters"><label>Collection<select id="collection"><option value="all">All collections</option></select></label><label>Capability<select id="target"><option value="all">All capabilities</option></select></label><label>Category<select id="category"><option value="all">All categories</option></select></label><label>Evidence status<select id="status"><option value="all">All statuses</option></select></label><label>Priority<select id="priority"><option value="all">All priorities</option></select></label><button type="reset">Clear filters</button></div>
+</form></section>
+<section aria-labelledby="results"><div class="results-head"><div><h2 id="results" tabindex="-1">Results</h2><p id="result-status" role="status" aria-live="polite">Loading local catalogs…</p></div><button id="retry" type="button" hidden>Retry loading</button></div><div id="errors" role="alert" hidden></div><div id="cards" class="cards" aria-busy="true"></div></section>
+<footer>Read-only local explorer. No analytics, external runtime dependencies or private project data.</footer>
+<noscript>JavaScript is required for search. <a href="../engineering/catalog.json">Open the engineering catalog.</a></noscript></main></body></html>
