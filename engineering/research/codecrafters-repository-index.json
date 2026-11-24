@@ -1,0 +1,742 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-11-24",
+  "scope": "GitHub repository search results, not full source review. Pagination returned 139 unique organization repositories; profile page count may differ. No third-party files copied or executed.",
+  "author": {
+    "account": "danistefanovic",
+    "count": 6,
+    "records": [
+      {
+        "repository": "danistefanovic/hooka",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "danistefanovic/react-lazy-hero",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "danistefanovic/send",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "danistefanovic/ng-while-holding",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "danistefanovic/bolt.new",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "danistefanovic/hast-util-to-dom",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      }
+    ]
+  },
+  "organization": {
+    "account": "codecrafters-io",
+    "count": 139,
+    "records": [
+      {
+        "repository": "codecrafters-io/build-your-own-x",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/learning-stipends",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-redis",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/languages",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-sqlite",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-git",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-http-server",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-bittorrent",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-kafka",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-interpreter",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-shell",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/binspec",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-claude-code",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/ccbench",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-docker",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/cli",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-dns-server",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docs",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-grep",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/language-dashboard",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-explorer",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/sqlite-starter-rust",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-go",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-python",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-geocoding-algorithm",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/shell-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/http-server-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/legacy-course-sdk",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/language-templates",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/sqlite-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/sqlite-starter-go",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/ansi101",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-rust",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-starter-rust",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-starter-c",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/sqlite-starter-python",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/bittorrent-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/sample-sqlite-databases",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/course-template",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-starter-rust",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/coderbot-legacy",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-gleam-chess-bot-js",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/dns-server-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-java",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/interpreter-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/oci-image-executor",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/sqlite-starter-csharp",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-starter-swift",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/tester-utils",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-haskell",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-csharp",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/code-walkthroughs",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/llm-rules-test",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-gleam-chess-bot",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/active_prompt",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/kafka-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/http-server-starter-go",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/logstream",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-starter-php",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-clojure",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/environment-python",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/instant-pull-request-action",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/http-server-starter-python",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/sqlite-starter-swift",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-starter-python",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-starter-go",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/fly-api-proxy",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/coderbot-poc",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-starter-ruby",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/flyio-disk-performance-test",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/grep-starter-rust",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/torrentcli",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/heroku-buildpack-dbmate",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/bittorrent-test-seeder",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/lobbyside-react",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-host-proxy",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-ruby",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-dummy",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/claude-code-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/heroku-buildpack-gh",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/grep-starter-haskell",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-starter-go",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/builder",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-starter-python",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/grep-starter-go",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/grep-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/react-starter-javascript",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/ember-codemirror",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-cpp",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/test-runner-builder",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-course-slug-1",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-sample-1",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/github-avatars-dataset",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/grep-starter-python",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/writers-stg-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-starter-nim",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/codecrafters-action",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/coderbot",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/rails-ember-renderer",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-c",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-javascript",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/homebrew-tap",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/go-linewriter",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/gleam-chess-bot-js-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-sample-2",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/sqlite-starter-ruby",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-crystal",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-elixir",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/learning-stipends-1",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/code-example-previews-stg",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/dummy-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-writers-stg",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-sample-3",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/gleam-chess-bot-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/http-server-starter-rust",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/git-starter-kotlin",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/tester-template",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-solution-go",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/rain",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/redis-starter-php",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docker-starter-ruby",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/stagegen",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/bittorrent-test-tracker",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/docsdb",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/sqlite-starter-javascript",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/ember-api-actions",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/grep-starter-ruby",
+        "archived": true,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/course-sdk",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-firewall",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/inference-engine-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-inference-engine",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-cloudflare",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/build-your-own-tokenizer",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/firewall-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/tokenizer-tester",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      },
+      {
+        "repository": "codecrafters-io/claude-code-lsp-snippets",
+        "archived": false,
+        "status": "DISCOVERY_ONLY"
+      }
+    ]
+  }
+}
