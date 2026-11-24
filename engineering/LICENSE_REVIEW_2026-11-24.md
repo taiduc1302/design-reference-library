@@ -1,0 +1,25 @@
+# Source license triage — 2026-11-24
+
+This records actual license-file or declaration evidence for the directly linked sources and selected prior candidates. It is not legal advice, a dependency audit or blanket clearance. The new modules are original MIT code, with no external implementation, media, dependencies or private source copied.
+
+| Source | Observed license / limitation | Evidence |
+|---|---|---|
+| SRC-001 Build Your Own X | CC0 declared for the directory; no separate LICENSE file in observed tree; linked projects retain independent rights | [Pinned README declaration](https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md#origins--license) |
+| SRC-002 Coding Agent From Scratch | Apache-2.0 license read at itsdecodingai canonical working repository; directory URL uses decodingai-magazine alias, which did not independently return a readable license | [License](https://github.com/itsdecodingai/building-a-coding-agent-from-scratch-course/blob/2ba55b548dbb2bb352c3651e20c8a21f3e5eb9d4/LICENSE); blob f0697044670784998b818e8508578411b898f683 |
+| SRC-003 Evaluation Harness | Article observed; explicit reusable license not verified; link/reference only | [Article](https://machinelearningmastery.com/building-a-custom-llm-evaluation-harness-in-python-from-scratch/) |
+| SRC-004 RAG From Scratch | No LICENSE/NOTICE/COPYING path in observed non-truncated tree; README did not identify a license. Reference only; no code/notebook reuse authorized | [Pinned tree](https://github.com/langchain-ai/rag-from-scratch/tree/1fdb7d0e4f1d3e731c8397332452715512f18667) |
+| SRC-005 Vector Database from Scratch | Apache-2.0 license read; upstream README directory entry confirmed at SRC-001 pinned revision | [License](https://github.com/skyzh/vector-db-from-scratch/blob/main/LICENSE); blob 261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64 |
+| SRC-006 Computer Graphics from Scratch | Demo JavaScript MIT; book repository text/images CC BY-NC-ND 4.0; no copied text, diagrams, assets or code | [Split license](https://github.com/ggambetta/computer-graphics-from-scratch/blob/master/LICENSE.md); blob 8d3164255b7812d1432c19b3bbf1e417caae6a60 |
+| SRC-007 ECC | MIT license read; exact candidate files, nested notices, hooks and dependencies require further review | [License](https://github.com/affaan-m/ECC/blob/main/LICENSE); blob b832b6f642312312367c07688dc7426db40a82ed |
+| SRC-008 Hive | Apache-2.0 license read; separate dependencies/assets and notices require review | [License](https://github.com/aden-hive/hive/blob/main/LICENSE); blob f72c3e53be0426cfe5a26b6369918ac0d12a7bb5 |
+| SRC-009 ChanMeng666 | 82 research leads; earlier inventory explicitly NOT_FILE_LEVEL_VERIFIED. Selected archlang and a11y-loop MIT files read; remaining individual candidates not newly cleared | [archlang](https://github.com/ChanMeng666/archlang/blob/main/LICENSE), [a11y-loop](https://github.com/ChanMeng666/a11y-loop/blob/main/LICENSE), same observed blob 000bb9ad8abb707b9b4c9c5754a24f3856ded2af; [inventory](../catalog/chanmeng666-opportunity-matrix.json) |
+| SRC-010 dchantlos | Existing audit records 14 repo-level license findings, including nine NO_LICENSE_FOUND, Apache-2.0/MIT/MPL-2.0 and one mixed NOASSERTION case. construction-timelapse LICENSE fetch returned 404 again; do not assume permissions | [Canonical source matrix](../catalog/dchantlos-opportunity-matrix.json) |
+| SRC-011 Civil Takeoff Markups | MIT license read; third-party material separate | [License](https://github.com/taiduc1302/civil-takeoff-markups-mcp/blob/main/LICENSE); blob 4f0fedeb912e378bcfc7b3694600d601c3be0a71 |
+| SRC-012 AI Model Advisor | Apache-2.0 license read; file scope and external benchmark data separate | [License](https://github.com/taiduc1302/ai-model-advisor/blob/main/LICENSE); blob f72c3e53be0426cfe5a26b6369918ac0d12a7bb5 |
+| SRC-013 Design library | MIT original scaffold; existing catalog and third-party notices control reuse. All four Gus Bavia source LICENSE files read (MIT, shared blob 5d9a434f4f69fa89d47ed1122e8c8d9d04b77272) | [License](../LICENSE), [notices](../THIRD_PARTY_NOTICES.md), [design references](../catalog/references.json) |
+
+## Reuse gate
+
+Before adapting any third-party implementation, pin repository revision and exact file; inspect applicable license, notices, copyright, nested licenses, dependency and asset/data/model rights. Check license compatibility and preserve attribution/NOTICE where required. Review security, permissions, installation and transitive dependencies separately. A public repository, an upstream MIT/Apache file or a CC0 link directory does not grant rights over all associated assets and linked projects.
+
+No third-party implementation is approved for copying by this triage. Full file-level review of 82 ChanMeng666 and 14 dchantlos repositories and their transitive dependencies, all linked tutorials, asset/data/model rights and candidate files is NOT_RUN. Review exact selected implementations before any target pilot.
