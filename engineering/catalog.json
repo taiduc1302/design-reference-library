@@ -26,130 +26,143 @@
       "title": "Build Your Own X",
       "url": "https://github.com/codecrafters-io/build-your-own-x",
       "kind": "directory",
-      "observation": "README categories and AI section observed 2026-11-24; directory is not a license for linked works.",
+      "observation": "Pinned README declares CC0 for the directory; linked works retain independent rights.",
       "observed_on": "2026-11-24",
-      "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "pinned_revision": "94e4be4102452119008fe47199f3cb915abe0c50",
+      "reuse_status": "REFERENCE_ONLY_CC0_DIRECTORY_ONLY",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-002",
       "title": "Building a Coding Agent From Scratch",
-      "url": "https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course",
+      "url": "https://github.com/itsdecodingai/building-a-coding-agent-from-scratch-course",
       "kind": "course",
-      "observation": "Public README observed; exact implementation files, commit and dependencies not reviewed.",
+      "observation": "Working canonical repository license read; original directory alias did not independently return a readable license.",
       "observed_on": "2026-11-24",
-      "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "pinned_revision": "2ba55b548dbb2bb352c3651e20c8a21f3e5eb9d4",
+      "reuse_status": "REFERENCE_ONLY_APACHE_2_0_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-003",
       "title": "LLM Evaluation Harness tutorial",
       "url": "https://machinelearningmastery.com/building-a-custom-llm-evaluation-harness-in-python-from-scratch/",
       "kind": "tutorial",
-      "observation": "Link and topic observed in SRC-001; direct article/license review pending.",
+      "observation": "Article reference only; no reusable license verified.",
       "observed_on": "2026-11-24",
       "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "reuse_status": "REFERENCE_ONLY_NO_EXPLICIT_REUSE_LICENSE_VERIFIED",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-004",
       "title": "RAG From Scratch",
       "url": "https://github.com/langchain-ai/rag-from-scratch",
       "kind": "course",
-      "observation": "Public repository landing page observed; notebook execution and license review pending.",
+      "observation": "No license path in pinned non-truncated tree; README did not declare license.",
       "observed_on": "2026-11-24",
-      "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "pinned_revision": "1fdb7d0e4f1d3e731c8397332452715512f18667",
+      "reuse_status": "REFERENCE_ONLY_NO_LICENSE_FOUND_REFERENCE_ONLY",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-005",
       "title": "Vector Database from Scratch",
       "url": "https://skyzh.github.io/vector-db-from-scratch/",
       "kind": "course",
-      "observation": "Course preface observed independently; exact and approximate search benchmarking; not verified as a SRC-001 entry.",
+      "observation": "Directory entry confirmed; upstream LICENSE blob 261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64 read.",
       "observed_on": "2026-11-24",
       "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "reuse_status": "REFERENCE_ONLY_APACHE_2_0_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-006",
       "title": "Computer Graphics from Scratch",
       "url": "https://www.gabrielgambetta.com/computer-graphics-from-scratch/",
       "kind": "book",
-      "observation": "Contents observed; rendering theory only, not an engineering quantity engine.",
+      "observation": "Upstream split license file read; demo JS MIT, text and images CC BY-NC-ND 4.0.",
       "observed_on": "2026-11-24",
       "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "reuse_status": "REFERENCE_ONLY_MIXED_MIT_JS_CC_BY_NC_ND_TEXT_IMAGES",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-007",
       "title": "ECC (formerly Everything Claude Code)",
       "url": "https://github.com/affaan-m/ECC",
       "kind": "upstream",
-      "observation": "README and agent.yaml/package metadata observed; MIT declared by manifest, exact reuse rights and hook safety pending. Existing local reference fork: https://github.com/taiduc1302/ECC",
+      "observation": "Upstream MIT LICENSE blob b832b6f642312312367c07688dc7426db40a82ed read.",
       "observed_on": "2026-11-24",
       "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "reuse_status": "REFERENCE_ONLY_MIT_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-008",
       "title": "Hive",
       "url": "https://github.com/aden-hive/hive",
       "kind": "upstream",
-      "observation": "README/configuration overview observed; shared ledger, recovery and scoped memory. Existing reference fork: https://github.com/taiduc1302/hive",
+      "observation": "Upstream Apache-2.0 LICENSE blob f72c3e53be0426cfe5a26b6369918ac0d12a7bb5 read.",
       "observed_on": "2026-11-24",
       "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "reuse_status": "REFERENCE_ONLY_APACHE_2_0_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-009",
       "title": "ChanMeng666 research inventory",
       "url": "../catalog/chanmeng666-opportunity-matrix.json",
       "kind": "internal-index",
-      "observation": "Existing 82-repository research inventory; use its precise source records and statuses, not a blanket approval.",
+      "observation": "Selected archlang and a11y-loop MIT licenses read; other inventory entries not newly cleared.",
       "observed_on": "2026-11-24",
       "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "reuse_status": "REFERENCE_ONLY_MIXED_INVENTORY_FILE_LEVEL_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-010",
       "title": "dchantlos research inventory",
       "url": "../catalog/dchantlos-opportunity-matrix.json",
       "kind": "internal-index",
-      "observation": "Existing 13-pattern matrix and 14-repository audit; earlier limited smoke evidence remains scoped to its source record.",
+      "observation": "Existing 14-repository audit retained; construction-timelapse has no verified reuse license.",
       "observed_on": "2026-11-24",
       "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "reuse_status": "REFERENCE_ONLY_MIXED_INVENTORY_FILE_LEVEL_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-011",
       "title": "Civil takeoff traceability method",
       "url": "https://github.com/taiduc1302/civil-takeoff-markups-mcp",
       "kind": "public-project",
-      "observation": "Public README observed; native readback, traceability, fail-closed status; live tool QA not performed here.",
+      "observation": "Public MIT license read; QA lifecycle source sampled.",
       "observed_on": "2026-11-24",
-      "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "pinned_revision": "985d0e20cb873e9b0ea533b04f36a21feadaa1d4",
+      "reuse_status": "REFERENCE_ONLY_MIT_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-012",
       "title": "AI Model Advisor",
       "url": "https://github.com/taiduc1302/ai-model-advisor",
       "kind": "public-project",
-      "observation": "Public README observed; heuristic model routing and evaluation separation; no new benchmark.",
+      "observation": "Public Apache-2.0 license read; benchmark runner source sampled.",
       "observed_on": "2026-11-24",
-      "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "pinned_revision": "91c8029e71116218bfda667a19e276146da7d3bc",
+      "reuse_status": "REFERENCE_ONLY_APACHE_2_0_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     },
     {
       "id": "SRC-013",
       "title": "Design Reference Library",
       "url": "../README.md",
       "kind": "internal-index",
-      "observation": "Existing design catalog, components, and QA records remain authoritative for UI.",
+      "observation": "Existing design catalog and notices govern third-party material.",
       "observed_on": "2026-11-24",
       "pinned_revision": null,
-      "reuse_status": "REFERENCE_ONLY_EXACT_LICENSE_AND_REVISION_PENDING"
+      "reuse_status": "REFERENCE_ONLY_MIT_ORIGINAL_SCAFFOLD_ONLY",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
     }
   ],
   "patterns": [
