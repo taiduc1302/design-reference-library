@@ -163,6 +163,94 @@
       "pinned_revision": null,
       "reuse_status": "REFERENCE_ONLY_MIT_ORIGINAL_SCAFFOLD_ONLY",
       "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-014",
+      "title": "Build Your Own Database from Scratch",
+      "url": "https://build-your-own.org/database/",
+      "kind": "learning-reference",
+      "observation": "Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_LICENSE_AND_FILE_SCOPE_PENDING",
+      "discovery_source": "https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md"
+    },
+    {
+      "id": "SRC-015",
+      "title": "Mini-LSM storage engine",
+      "url": "https://skyzh.github.io/mini-lsm/",
+      "kind": "learning-reference",
+      "observation": "Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_LICENSE_AND_FILE_SCOPE_PENDING",
+      "discovery_source": "https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md"
+    },
+    {
+      "id": "SRC-016",
+      "title": "Build Your Own Kafka",
+      "url": "https://github.com/buildthingsuseful/build-your-own-kafka",
+      "kind": "learning-reference",
+      "observation": "Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_LICENSE_AND_FILE_SCOPE_PENDING",
+      "discovery_source": "https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md"
+    },
+    {
+      "id": "SRC-017",
+      "title": "Write yourself a Git",
+      "url": "https://wyag.thb.lt/",
+      "kind": "learning-reference",
+      "observation": "Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_LICENSE_AND_FILE_SCOPE_PENDING",
+      "discovery_source": "https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md"
+    },
+    {
+      "id": "SRC-018",
+      "title": "Vector space indexing in Python",
+      "url": "https://boyter.org/2010/08/build-vector-space-search-engine-python/",
+      "kind": "learning-reference",
+      "observation": "Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_LICENSE_AND_FILE_SCOPE_PENDING",
+      "discovery_source": "https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md"
+    },
+    {
+      "id": "SRC-019",
+      "title": "Rust command-line applications book",
+      "url": "https://rust-cli.github.io/book/index.html",
+      "kind": "learning-reference",
+      "observation": "Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_LICENSE_AND_FILE_SCOPE_PENDING",
+      "discovery_source": "https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md"
+    },
+    {
+      "id": "SRC-020",
+      "title": "Build a Large Language Model from Scratch",
+      "url": "https://github.com/rasbt/LLMs-from-scratch",
+      "kind": "learning-reference",
+      "observation": "Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_LICENSE_AND_FILE_SCOPE_PENDING",
+      "discovery_source": "https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md"
+    },
+    {
+      "id": "SRC-021",
+      "title": "Build a Reasoning Model from Scratch",
+      "url": "https://github.com/rasbt/reasoning-from-scratch",
+      "kind": "learning-reference",
+      "observation": "Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_LICENSE_AND_FILE_SCOPE_PENDING",
+      "discovery_source": "https://github.com/codecrafters-io/build-your-own-x/blob/94e4be4102452119008fe47199f3cb915abe0c50/README.md"
     }
   ],
   "patterns": [
@@ -560,6 +648,266 @@
       "proposal": "Apply existing design library checks to keyboard, 320px layout, reduced motion and error states.",
       "acceptance": "Real target browser demonstrates keyboard operation and readable layout; if unavailable, mark NOT_RUN.",
       "stop_condition": "Do not relabel isolated component testing as production browser sign-off.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-020",
+      "category": "data-systems",
+      "title": "Schema migration and recovery",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-014",
+        "SRC-015"
+      ],
+      "targets": [
+        "document-tracking",
+        "operations",
+        "education"
+      ],
+      "proposal": "Version persisted schemas; validate before replacing saved state; retain a backup on migration failure.",
+      "acceptance": "Synthetic old, current and corrupt states exercise migration, read-only fallback and repeatable recovery.",
+      "stop_condition": "Never silently discard valid records or overwrite the original on a failed migration.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-021",
+      "category": "data-systems",
+      "title": "Append-only event replay with deduplication",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-016",
+        "SRC-015"
+      ],
+      "targets": [
+        "agent-orchestration",
+        "tender-discovery",
+        "document-tracking"
+      ],
+      "proposal": "Separate event identity, cursor and processing result; detect repeated or late events.",
+      "acceptance": "Replaying a duplicate event and a crash after processing does not duplicate the derived record.",
+      "stop_condition": "No promise of exactly-once effects across external systems.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-022",
+      "category": "developer-workflow",
+      "title": "Content-addressed artifacts and reproducible manifests",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-017",
+        "SRC-011"
+      ],
+      "targets": [
+        "civil-geometry",
+        "estimate-qa",
+        "developer-tooling",
+        "tender-discovery"
+      ],
+      "proposal": "Bind evidence to content digest, revision, method and recorded environment, not mutable filenames.",
+      "acceptance": "One-byte artifact change and missing manifest entry cause verification failure; originals remain untouched.",
+      "stop_condition": "Hash proves identity, not semantic accuracy or permission.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-023",
+      "category": "retrieval",
+      "title": "Exact-token indexing and ranking baseline",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-018",
+        "SRC-001"
+      ],
+      "targets": [
+        "tender-discovery",
+        "document-tracking",
+        "education",
+        "developer-tooling"
+      ],
+      "proposal": "Start with deterministic lexical indexing, normalization and transparent ranking; compare with semantic retrieval only if useful.",
+      "acceptance": "Labeled fixture retains exact drawing IDs and aliases, ranks known relevant records and measures recall.",
+      "stop_condition": "Never silently infer source authority or suppress rare identifiers.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-024",
+      "category": "developer-workflow",
+      "title": "Scriptable CLI with dry-run contract",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-019",
+        "SRC-007"
+      ],
+      "targets": [
+        "developer-tooling",
+        "civil-geometry",
+        "agent-orchestration"
+      ],
+      "proposal": "Expose explicit input, output, preview and machine-readable exit codes; make destructive actions opt-in.",
+      "acceptance": "Dry-run leaves filesystem unchanged; malformed input returns a documented nonzero status.",
+      "stop_condition": "Do not add command execution permissions or run third-party code by default.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-025",
+      "category": "evaluation",
+      "title": "Versioned prompt and inference configuration",
+      "priority": "P2",
+      "source_ids": [
+        "SRC-020",
+        "SRC-021",
+        "SRC-012"
+      ],
+      "targets": [
+        "ai-evaluation",
+        "agent-orchestration",
+        "education"
+      ],
+      "proposal": "Record model/configuration, prompt template revision, dataset and judge revision with outputs.",
+      "acceptance": "Changing inference settings yields a distinct run identity; missing settings mark comparison incomplete.",
+      "stop_condition": "Do not conflate tutorial models with production model capabilities or train without approval.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-026",
+      "category": "retrieval",
+      "title": "Document revision lineage and supersession",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-004",
+        "SRC-017",
+        "SRC-011"
+      ],
+      "targets": [
+        "tender-discovery",
+        "estimate-qa",
+        "document-tracking"
+      ],
+      "proposal": "Represent revision ancestry and explicit replacement/supersession relations separately from text similarity.",
+      "acceptance": "Cumulative addendum fixture retains unique requirements and flags ambiguous conflicting changes.",
+      "stop_condition": "No last-write-wins rule or auto-resolved contractual contradiction.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-027",
+      "category": "security",
+      "title": "Dependency and capability manifest",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-007",
+        "SRC-009"
+      ],
+      "targets": [
+        "agent-orchestration",
+        "developer-tooling",
+        "web-ux"
+      ],
+      "proposal": "Record dependency version, origin, license, network/filesystem capabilities and reason before enabling a feature.",
+      "acceptance": "Unapproved dependency, unsafe lifecycle hook or unknown license is reported and blocks promotion.",
+      "stop_condition": "Do not mistake a repository license for all assets or transitive licenses.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-028",
+      "category": "geometry",
+      "title": "Unit, datum and tolerance contracts",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-006",
+        "SRC-011",
+        "SRC-010"
+      ],
+      "targets": [
+        "civil-geometry",
+        "earthworks",
+        "estimate-qa"
+      ],
+      "proposal": "Require declared unit, scale, coordinate system and tolerance at calculation boundaries.",
+      "acceptance": "Synthetic scale and datum mismatch fails closed; accepted case matches independent analytic fixture.",
+      "stop_condition": "Never convert unknown units or replace a verified engineering solver.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-029",
+      "category": "application-architecture",
+      "title": "Adapter boundary for optional AI and offline mode",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-008",
+        "SRC-012"
+      ],
+      "targets": [
+        "operations",
+        "tender-discovery",
+        "ai-evaluation",
+        "education"
+      ],
+      "proposal": "Keep deterministic domain functions callable without network or provider credentials; adapters report availability.",
+      "acceptance": "Disabled or failing provider does not stop deterministic workflow or silently mark output live.",
+      "stop_condition": "No unauthorized provider calls, credentials or data sharing.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-030",
+      "category": "developer-workflow",
+      "title": "Test evidence and release claim ledger",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-007",
+        "SRC-011",
+        "SRC-012"
+      ],
+      "targets": [
+        "developer-tooling",
+        "estimate-qa",
+        "web-ux"
+      ],
+      "proposal": "Associate each release claim with exact commit, command, evidence and verification status.",
+      "acceptance": "Stale PASS and missing required evidence cannot produce a release-ready state.",
+      "stop_condition": "No automatic release approval from passing checks.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-031",
+      "category": "application-architecture",
+      "title": "Freshness and stale-decision invalidation",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-012",
+        "SRC-013",
+        "SRC-016"
+      ],
+      "targets": [
+        "operations",
+        "tender-discovery",
+        "document-tracking"
+      ],
+      "proposal": "Bind decision to input identity/version and show freshness; require review when input changes.",
+      "acceptance": "Changed fingerprint invalidates prior decision while unchanged input preserves audit history.",
+      "stop_condition": "Never imply current source data or approval from a cached recommendation.",
       "status": "RESEARCH_LEAD",
       "verification": "NOT_RUN",
       "adoption": "NOT_ADOPTED"
