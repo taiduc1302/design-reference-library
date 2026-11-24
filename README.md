@@ -41,6 +41,8 @@ Structured metadata: [`catalog/references.json`](catalog/references.json), [`cat
 
 ## Engineering Reference Library
 
+Start with the [Knowledge Explorer](gallery/knowledge.html) (local HTTP), [reuse workflow](engineering/REUSE_WORKFLOW.md) and [agent acceptance contract](engineering/AGENT_ACCEPTANCE_CONTRACT.md). Research leads and independently tested utilities remain distinct.
+
 For technical architecture, AI agents, evaluation, retrieval, civil geometry, local QA and operational software, start with the [Engineering Reference Library](engineering/README.md), its [machine-readable catalog](engineering/catalog.json) and [pilot roadmap](engineering/ROADMAP.md). These are research leads, not approved integrations. Existing design and external research catalogs remain canonical.
 
 ## External opportunity research (not integrated)
