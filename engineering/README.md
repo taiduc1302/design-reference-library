@@ -2,7 +2,7 @@
 
 A technical companion to the [Design Reference Library](../README.md). This is the shared reference layer for software architecture, agent engineering, testing, data systems, civil geometry and operational tools. It is **not** a product runtime, approved dependency list, or a second copy of existing research.
 
-**Baseline 2026-11-24:** 31 original proposed patterns, 21 source references, 11 target capability groups. All initial patterns remain research leads, not certified or adopted in consuming projects. Three original standalone utility prototypes have separately scoped unit-test evidence. The [machine-readable catalog](catalog.json) is authoritative. The [roadmap](ROADMAP.md) records sequencing, pilot gates and known gaps.
+**Baseline 2026-11-24:** 39 original proposed patterns, 24 source references, 11 target capability groups. All initial patterns remain research leads, not certified or adopted in consuming projects. Three original standalone utility prototypes have separately scoped unit-test evidence. The [machine-readable catalog](catalog.json) is authoritative. The [roadmap](ROADMAP.md) records sequencing, pilot gates and known gaps.
 
 ## How to use this library
 
@@ -16,6 +16,8 @@ A technical companion to the [Design Reference Library](../README.md). This is t
 
 - [Unified searchable gallery](../gallery/knowledge.html) (serve the repository root over local HTTP).
 - [Owner-approved priorities](PRIORITIES.md).
+- [Reuse workflow](REUSE_WORKFLOW.md) and [agent acceptance contract](AGENT_ACCEPTANCE_CONTRACT.md).
+- [383 tutorial index](research/build-your-own-x-index.json), [145 repository discovery index](research/codecrafters-repository-index.json) and [CodeCrafters source review](research/CODECRAFTERS_AGENT_ENGINEERING_DEEP_REVIEW_2026-11-24.md).
 
 ## Pattern index
 
@@ -26,6 +28,8 @@ A technical companion to the [Design Reference Library](../README.md). This is t
 | ENG-001 | Scoped agent tool loop | P1 | agent-orchestration, developer-tooling |
 | ENG-002 | Durable task ledger and lease | P1 | agent-orchestration, developer-tooling |
 | ENG-003 | Checkpoint, resume and idempotency | P1 | agent-orchestration, tender-discovery, operations |
+| ENG-034 | Correlated tool action and independent readback | P1 | agent-orchestration, civil-geometry, estimate-qa, developer-tooling |
+| ENG-037 | Metadata-first skill selection and scoped activation | P1 | agent-orchestration, developer-tooling |
 
 ### evaluation
 
@@ -34,6 +38,10 @@ A technical companion to the [Design Reference Library](../README.md). This is t
 | ENG-004 | Comparable offline model evaluation | P1 | ai-evaluation, estimate-qa, civil-geometry |
 | ENG-005 | Shadow, canary and rollback for routing | P2 | ai-evaluation, agent-orchestration |
 | ENG-025 | Versioned prompt and inference configuration | P2 | ai-evaluation, agent-orchestration, education |
+| ENG-032 | Independent artifact verifier and oracle controls | P1 | ai-evaluation, civil-geometry, estimate-qa, developer-tooling |
+| ENG-033 | Frozen trial denominator and fail-closed outcomes | P1 | ai-evaluation, developer-tooling, agent-orchestration |
+| ENG-035 | Seeded negative controls and decoy fixtures | P1 | ai-evaluation, civil-geometry, education, developer-tooling |
+| ENG-039 | Separate offline replay, live and native acceptance evidence | P1 | ai-evaluation, civil-geometry, estimate-qa, developer-tooling |
 
 ### retrieval
 
@@ -77,6 +85,7 @@ A technical companion to the [Design Reference Library](../README.md). This is t
 | ENG-022 | Content-addressed artifacts and reproducible manifests | P1 | civil-geometry, estimate-qa, developer-tooling, tender-discovery |
 | ENG-024 | Scriptable CLI with dry-run contract | P1 | developer-tooling, civil-geometry, agent-orchestration |
 | ENG-030 | Test evidence and release claim ledger | P1 | developer-tooling, estimate-qa, web-ux |
+| ENG-036 | Version-bound symbol navigation and diagnostics | P1 | developer-tooling, agent-orchestration |
 
 ### security
 
@@ -84,6 +93,7 @@ A technical companion to the [Design Reference Library](../README.md). This is t
 |---|---|---|---|
 | ENG-015 | Least privilege and untrusted-input boundary | P1 | agent-orchestration, tender-discovery, developer-tooling |
 | ENG-027 | Dependency and capability manifest | P1 | agent-orchestration, developer-tooling, web-ux |
+| ENG-038 | Immutable verifier and environment integrity | P1 | developer-tooling, agent-orchestration, ai-evaluation |
 
 ### application-architecture
 
@@ -131,6 +141,9 @@ A technical companion to the [Design Reference Library](../README.md). This is t
 - **SRC-019 — [Rust command-line applications book](https://rust-cli.github.io/book/index.html)**: Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.
 - **SRC-020 — [Build a Large Language Model from Scratch](https://github.com/rasbt/LLMs-from-scratch)**: Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.
 - **SRC-021 — [Build a Reasoning Model from Scratch](https://github.com/rasbt/reasoning-from-scratch)**: Link observed in SRC-001 pinned README; individual source files, dependencies, revision and license not newly inspected. Reference only.
+- **SRC-022 — [CCBench](https://github.com/codecrafters-io/ccbench)**: Pinned targeted source review; independent verifier and stage regressions, but compile failure can write reward 1; published impact unknown. No reuse clearance.
+- **SRC-023 — [Claude Code Tester](https://github.com/codecrafters-io/claude-code-tester)**: Pinned targeted source review: randomized workspace, request recorder, actual filesystem and LSP checks; raw request capture, live provider and bypass permissions are not safe defaults.
+- **SRC-024 — [Build Your Own Claude Code](https://github.com/codecrafters-io/build-your-own-claude-code)**: Pinned design and course review: seven Skills stages, LSP versioned feedback; five LSP tester stages vs six design stages; beta/deferred scope. No copied code.
 
 ## Promotion and contribution contract
 
