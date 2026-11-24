@@ -12,6 +12,8 @@
 
 ## Engineering references
 
+Read [reuse workflow](engineering/REUSE_WORKFLOW.md), [agent acceptance contract](engineering/AGENT_ACCEPTANCE_CONTRACT.md) and [priorities](engineering/PRIORITIES.md). Existing target implementations take precedence over new shared code. Use the Knowledge Explorer for discovery, not authorization.
+
 For non-UI architecture and cross-project technical research, first consult [engineering/README.md](engineering/README.md), [engineering/catalog.json](engineering/catalog.json) and [engineering/ROADMAP.md](engineering/ROADMAP.md). Identify existing target implementations before selecting an ENG pattern. Follow its source-review, acceptance and stop conditions; keep private project identifiers out of the public catalog. Research status does not authorize implementation or dependency installation.
 
 ## Unvetted external opportunities
