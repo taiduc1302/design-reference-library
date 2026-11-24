@@ -13,10 +13,14 @@ This is a proposed portfolio sequence, not an active assignment or permission to
 | 2 | ENG-007/008/017/018: retrieval, persistence and decision support | Establish current baseline and actual user need first | Measured benefit vs baseline; offline and failure handling; no silent overwrites |
 | 3 | ENG-005/010/012/019: advanced routing, graphics, progress and UI validation | Target-specific need, safe data, appropriate test environment | No unverified production claim or engineering sign-off |
 
+## Baseline implementation follow-up
+
+Three original dependency-free CommonJS utility prototypes were created: review gate, revision-aware evidence grouping, and structural catalog validation. Their 33 synthetic unit cases passed in isolated V8 execution; consuming-project tests and full checkout remain NOT_RUN. See modules/README.md for commands and exact limitations. The portfolio source inventory covered all 27 accessible trees and sampled key files; this is not a full audit. All ENG adoption statuses remain unchanged.
+
 ## Gaps and limits
 
-- This baseline reviewed repository/documentation landing pages and existing research catalogs, not every linked tutorial or exact upstream implementation. Pin each upstream revision, inspect file-level licenses and dependencies before a pilot. Vector database course is an independent companion, not asserted to be in Build Your Own X. The evaluation tutorial is linked from that directory; direct article inspection is pending.
+- This baseline reviewed repository/documentation landing pages and existing research catalogs, not every linked tutorial or exact upstream implementation. Pin each upstream revision, inspect file-level licenses and dependencies before a pilot. Pinned Build Your Own X README confirms the vector database and evaluation tutorial entries. See LICENSE_REVIEW_2026-11-24.md for actual license findings and unresolved file-level scope.
 - The existing source matrices retain their previous scoped tests and gaps. No new source code was copied, installed or executed, no application regression/browser/Windows checks were run for this documentation-only work, and no target projects were changed or promoted.
 - Catalog structural checks can be performed without a checkout: parse JSON, check unique source/pattern IDs, resolve every source and target reference, and require a testable acceptance and stop condition. Full gallery or application tests remain separate.
 - Public catalog uses generic capability groups for non-public repositories. A consuming agent can map a capability to a private repo in its own authorized context; do not publish private project names here.
-- Future improvements: add a source-review template with pinned revisions, a local dependency-free catalog validator, and an optional searchable gallery only if needed. Avoid duplicating the existing opportunity gallery or source matrices.
+- Future improvements: add a source-review template with pinned revisions and an optional searchable gallery only if needed. An original standalone catalog validator now exists in modules/catalog-check.cjs. Avoid duplicating the existing opportunity gallery or source matrices.
