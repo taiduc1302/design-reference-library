@@ -59,6 +59,16 @@ export function normalizeCollection(id, data) {
   });
 }
 const rank={P1:0,HIGH:0,P2:1,MEDIUM:1,P3:2,LOW:2,NONE:3,UNRANKED:4};
+const priorityRank=v=>Object.hasOwn(rank,v)?rank[v]:9;
+export function filterOptions(records,scope,key) {
+  if(!["collection","target","category","status","priority"].includes(key)) throw Error("Unknown filter");
+  return [...new Set(searchRecords(records,{scope}).flatMap(r=>key==="target"?r.targets:[r[key]]))].filter(Boolean).sort();
+}
+export function pageRecords(records,filters,limit=30){
+  if(!Number.isSafeInteger(limit)||limit<1)throw Error("Invalid page limit");
+  const matching=searchRecords(records,filters);
+  return {records:matching.slice(0,limit),total:matching.length,hasMore:matching.length>limit};
+}
 export function searchRecords(records, filters={}) {
   const terms=norm(filters.query).split(/\s+/).filter(Boolean);
   return list(records).filter(r=>{
@@ -68,7 +78,7 @@ export function searchRecords(records, filters={}) {
     if(filters.target&&filters.target!=="all"&&!r.targets.includes(filters.target))return false;
     const hay=norm([r.id,r.title,r.collectionLabel,r.category,r.status,r.priority,...r.targets,...r.tags,r.summary,r.acceptance,r.risk,...r.links.map(l=>l.label+" "+l.url+" "+(l.detail||""))].join(" "));
     return terms.every(t=>hay.includes(t));
-  }).sort((a,b)=>(rank[a.priority]??9)-(rank[b.priority]??9)||a.collection.localeCompare(b.collection)||a.id.localeCompare(b.id));
+  }).sort((a,b)=>priorityRank(a.priority)-priorityRank(b.priority)||a.collection.localeCompare(b.collection)||a.id.localeCompare(b.id));
 }
 export function safeLink(value) {
   if(typeof value!=="string"||!value||/[\\\u0000-\u0020]/.test(value))return null;
