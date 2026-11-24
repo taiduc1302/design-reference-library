@@ -1,0 +1,568 @@
+{
+  "schema_version": 1,
+  "created": "2026-11-24",
+  "scope": "Cross-project engineering reference, research only. Public and synthetic information; generic capability names for non-public projects.",
+  "status": "RESEARCH_LEAD",
+  "priority_definition": {
+    "P1": "First inspect for reuse; no implementation authorization",
+    "P2": "Conditional follow-up when target need is demonstrated"
+  },
+  "targets": {
+    "agent-orchestration": "Agent harnesses and multi-agent workflows (e.g. public Hive fork)",
+    "ai-evaluation": "Model evaluation and routing (e.g. public AI Model Advisor)",
+    "tender-discovery": "Tender discovery, bid triage and addenda reconciliation",
+    "civil-geometry": "Civil measurement, PDF/CAD geometry and evidence (e.g. public civil-takeoff-markups-mcp)",
+    "earthworks": "Earthworks calculation and 2D/3D presentation",
+    "estimate-qa": "Estimating QA, document completeness and human approval (e.g. public Civil Bid Readiness Auditor)",
+    "developer-tooling": "Shared software development workflows and offline release verification",
+    "document-tracking": "Document lifecycle and tracking (e.g. public Statement Calendar)",
+    "web-ux": "Web applications, accessibility and reusable design components",
+    "operations": "Operational decision-support and delivery workflows",
+    "education": "Learning apps and feedback loops (e.g. public Construction Vocabulary Trainer)"
+  },
+  "sources": [
+    {
+      "id": "SRC-001",
+      "title": "Build Your Own X",
+      "url": "https://github.com/codecrafters-io/build-your-own-x",
+      "kind": "directory",
+      "observation": "Pinned README declares CC0 for the directory; linked works retain independent rights.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": "94e4be4102452119008fe47199f3cb915abe0c50",
+      "reuse_status": "REFERENCE_ONLY_CC0_DIRECTORY_ONLY",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-002",
+      "title": "Building a Coding Agent From Scratch",
+      "url": "https://github.com/itsdecodingai/building-a-coding-agent-from-scratch-course",
+      "kind": "course",
+      "observation": "Working canonical repository license read; original directory alias did not independently return a readable license.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": "2ba55b548dbb2bb352c3651e20c8a21f3e5eb9d4",
+      "reuse_status": "REFERENCE_ONLY_APACHE_2_0_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-003",
+      "title": "LLM Evaluation Harness tutorial",
+      "url": "https://machinelearningmastery.com/building-a-custom-llm-evaluation-harness-in-python-from-scratch/",
+      "kind": "tutorial",
+      "observation": "Article reference only; no reusable license verified.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_NO_EXPLICIT_REUSE_LICENSE_VERIFIED",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-004",
+      "title": "RAG From Scratch",
+      "url": "https://github.com/langchain-ai/rag-from-scratch",
+      "kind": "course",
+      "observation": "No license path in pinned non-truncated tree; README did not declare license.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": "1fdb7d0e4f1d3e731c8397332452715512f18667",
+      "reuse_status": "REFERENCE_ONLY_NO_LICENSE_FOUND_REFERENCE_ONLY",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-005",
+      "title": "Vector Database from Scratch",
+      "url": "https://skyzh.github.io/vector-db-from-scratch/",
+      "kind": "course",
+      "observation": "Directory entry confirmed; upstream LICENSE blob 261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64 read.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_APACHE_2_0_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-006",
+      "title": "Computer Graphics from Scratch",
+      "url": "https://www.gabrielgambetta.com/computer-graphics-from-scratch/",
+      "kind": "book",
+      "observation": "Upstream split license file read; demo JS MIT, text and images CC BY-NC-ND 4.0.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_MIXED_MIT_JS_CC_BY_NC_ND_TEXT_IMAGES",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-007",
+      "title": "ECC (formerly Everything Claude Code)",
+      "url": "https://github.com/affaan-m/ECC",
+      "kind": "upstream",
+      "observation": "Upstream MIT LICENSE blob b832b6f642312312367c07688dc7426db40a82ed read.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_MIT_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-008",
+      "title": "Hive",
+      "url": "https://github.com/aden-hive/hive",
+      "kind": "upstream",
+      "observation": "Upstream Apache-2.0 LICENSE blob f72c3e53be0426cfe5a26b6369918ac0d12a7bb5 read.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_APACHE_2_0_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-009",
+      "title": "ChanMeng666 research inventory",
+      "url": "../catalog/chanmeng666-opportunity-matrix.json",
+      "kind": "internal-index",
+      "observation": "Selected archlang and a11y-loop MIT licenses read; other inventory entries not newly cleared.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_MIXED_INVENTORY_FILE_LEVEL_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-010",
+      "title": "dchantlos research inventory",
+      "url": "../catalog/dchantlos-opportunity-matrix.json",
+      "kind": "internal-index",
+      "observation": "Existing 14-repository audit retained; construction-timelapse has no verified reuse license.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_MIXED_INVENTORY_FILE_LEVEL_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-011",
+      "title": "Civil takeoff traceability method",
+      "url": "https://github.com/taiduc1302/civil-takeoff-markups-mcp",
+      "kind": "public-project",
+      "observation": "Public MIT license read; QA lifecycle source sampled.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": "985d0e20cb873e9b0ea533b04f36a21feadaa1d4",
+      "reuse_status": "REFERENCE_ONLY_MIT_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-012",
+      "title": "AI Model Advisor",
+      "url": "https://github.com/taiduc1302/ai-model-advisor",
+      "kind": "public-project",
+      "observation": "Public Apache-2.0 license read; benchmark runner source sampled.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": "91c8029e71116218bfda667a19e276146da7d3bc",
+      "reuse_status": "REFERENCE_ONLY_APACHE_2_0_REPO_LICENSE_READ_FILE_SCOPE_PENDING",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    },
+    {
+      "id": "SRC-013",
+      "title": "Design Reference Library",
+      "url": "../README.md",
+      "kind": "internal-index",
+      "observation": "Existing design catalog and notices govern third-party material.",
+      "observed_on": "2026-11-24",
+      "pinned_revision": null,
+      "reuse_status": "REFERENCE_ONLY_MIT_ORIGINAL_SCAFFOLD_ONLY",
+      "license_review": "LICENSE_REVIEW_2026-11-24.md"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "ENG-001",
+      "category": "agent-engineering",
+      "title": "Scoped agent tool loop",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-002",
+        "SRC-007"
+      ],
+      "targets": [
+        "agent-orchestration",
+        "developer-tooling"
+      ],
+      "proposal": "Separate planning, permission checks, tool execution and observation; bounded turns and budgets.",
+      "acceptance": "A synthetic run denies an unauthorized write and stops after its budget; valid actions retain input/output evidence.",
+      "stop_condition": "No arbitrary hook or shell execution; do not grant broad credentials.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-002",
+      "category": "agent-engineering",
+      "title": "Durable task ledger and lease",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-008",
+        "SRC-007"
+      ],
+      "targets": [
+        "agent-orchestration",
+        "developer-tooling"
+      ],
+      "proposal": "Record claim, owner, scope, lease, progress, evidence and handoff in persistent state.",
+      "acceptance": "Two workers contend for one task; one wins; expired lease is recoverable without duplicate side effects.",
+      "stop_condition": "No shared uncommitted edits or assumed exactly-once delivery.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-003",
+      "category": "agent-engineering",
+      "title": "Checkpoint, resume and idempotency",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-008",
+        "SRC-002"
+      ],
+      "targets": [
+        "agent-orchestration",
+        "tender-discovery",
+        "operations"
+      ],
+      "proposal": "Persist input fingerprints and completion boundaries; retry only safe operations.",
+      "acceptance": "Inject interruption after write and before acknowledgement; restart yields one durable result.",
+      "stop_condition": "Never repeat irreversible submission or external payment automatically.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-004",
+      "category": "evaluation",
+      "title": "Comparable offline model evaluation",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-003",
+        "SRC-012"
+      ],
+      "targets": [
+        "ai-evaluation",
+        "estimate-qa",
+        "civil-geometry"
+      ],
+      "proposal": "Use versioned cases, expected evidence, deterministic checks, judge rubric, latency and cost.",
+      "acceptance": "Run identical fixture set twice; score exact cases deterministically and report sample size, missing outcomes and cost.",
+      "stop_condition": "LLM judge is advisory; no estimated success probability presented as calibrated.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-005",
+      "category": "evaluation",
+      "title": "Shadow, canary and rollback for routing",
+      "priority": "P2",
+      "source_ids": [
+        "SRC-012",
+        "SRC-007"
+      ],
+      "targets": [
+        "ai-evaluation",
+        "agent-orchestration"
+      ],
+      "proposal": "Evaluate candidate routing on recorded tasks before promotion; compare against frozen baseline.",
+      "acceptance": "A synthetic quality regression blocks promotion even if cost improves; rollback restores previous policy.",
+      "stop_condition": "No silent model updates or live rollout based on small samples.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-006",
+      "category": "retrieval",
+      "title": "Evidence-linked document retrieval",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-001",
+        "SRC-004"
+      ],
+      "targets": [
+        "tender-discovery",
+        "estimate-qa",
+        "document-tracking"
+      ],
+      "proposal": "Index immutable document chunks with page, source revision and section IDs; return citations with answers.",
+      "acceptance": "A synthetic tender with conflicting addenda returns both passages and flags the unresolved requirement.",
+      "stop_condition": "Retrieval ranking is not authority; never discard conflicting or superseded evidence.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-007",
+      "category": "retrieval",
+      "title": "Hybrid lexical and semantic search",
+      "priority": "P2",
+      "source_ids": [
+        "SRC-001",
+        "SRC-004",
+        "SRC-005"
+      ],
+      "targets": [
+        "tender-discovery",
+        "developer-tooling",
+        "document-tracking",
+        "education"
+      ],
+      "proposal": "Compare exact keyword, semantic and hybrid search; filter by metadata and preserve stable source IDs.",
+      "acceptance": "A labeled query set measures recall@k and latency for each method; rare drawing numbers remain retrievable.",
+      "stop_condition": "Start with simple indexed search; no vector database until measurable benefit.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-008",
+      "category": "data-systems",
+      "title": "Stable records and transactional audit",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-008",
+        "SRC-001"
+      ],
+      "targets": [
+        "agent-orchestration",
+        "document-tracking",
+        "tender-discovery",
+        "operations"
+      ],
+      "proposal": "Separate immutable input events from current derived state; enforce unique IDs and replay rules.",
+      "acceptance": "Replay duplicate and out-of-order events; final state is identical with audit entries intact.",
+      "stop_condition": "No destructive overwrite or unreviewed schema migration.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-009",
+      "category": "geometry",
+      "title": "Shared object identity across 2D and 3D",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-009",
+        "SRC-010",
+        "SRC-006"
+      ],
+      "targets": [
+        "earthworks",
+        "civil-geometry"
+      ],
+      "proposal": "Give each engineering object one stable ID and coordinate reference; selection maps to plan, section and 3D.",
+      "acceptance": "Select synthetic object in all views; ID, units and numeric quantity agree with authoritative fixture.",
+      "stop_condition": "Rendering is downstream of calculations; no quantities inferred from pixels.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-010",
+      "category": "geometry",
+      "title": "Projection and clipping reference cases",
+      "priority": "P2",
+      "source_ids": [
+        "SRC-006",
+        "SRC-001"
+      ],
+      "targets": [
+        "earthworks",
+        "civil-geometry"
+      ],
+      "proposal": "Test world-to-view transforms, unit conversion, clipping and section intersection on known geometry.",
+      "acceptance": "Known cube and sloped surface match analytic section and coordinate outputs within documented tolerance.",
+      "stop_condition": "A renderer is not a civil volume engine; do not replace a verified solver.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-011",
+      "category": "construction-qa",
+      "title": "Native readback with independent reconciliation",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-011",
+        "SRC-009"
+      ],
+      "targets": [
+        "civil-geometry",
+        "estimate-qa"
+      ],
+      "proposal": "Place native measurements from verified geometry; read back tool-computed values and compare against independent references.",
+      "acceptance": "Synthetic mismatch produces CHECK with both values; no automated APPROVED transition.",
+      "stop_condition": "Never alter signed originals or average disagreements to force agreement.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-012",
+      "category": "construction-qa",
+      "title": "4D planned versus observed progress",
+      "priority": "P2",
+      "source_ids": [
+        "SRC-010"
+      ],
+      "targets": [
+        "earthworks",
+        "estimate-qa",
+        "operations"
+      ],
+      "proposal": "Keep dated planned state, observed evidence and unknown state distinct; map them to stable element IDs.",
+      "acceptance": "Missing observation stays unknown and cannot advance installed quantity or payment status.",
+      "stop_condition": "Photo labels and rendered views are not certified installed progress.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-013",
+      "category": "developer-workflow",
+      "title": "Local regression and independent review gate",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-007",
+        "SRC-011"
+      ],
+      "targets": [
+        "developer-tooling",
+        "agent-orchestration",
+        "web-ux"
+      ],
+      "proposal": "Record baseline, failing case, targeted fix, regression commands, commit and fresh-context review.",
+      "acceptance": "A known failing fixture blocks release; unavailable environment yields NOT_RUN rather than PASS.",
+      "stop_condition": "No GitHub Actions or new paid service; use existing target-project scripts first.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-014",
+      "category": "developer-workflow",
+      "title": "Isolated branch/worktree coordination",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-007",
+        "SRC-008"
+      ],
+      "targets": [
+        "developer-tooling",
+        "agent-orchestration"
+      ],
+      "proposal": "Claim file scope and base SHA, isolate changes, inspect diff and reconcile before merge.",
+      "acceptance": "Parallel workers editing the same module detect collision and stop; no force-push.",
+      "stop_condition": "Never merge changed head without rechecking; respect repository-specific rules.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-015",
+      "category": "security",
+      "title": "Least privilege and untrusted-input boundary",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-007",
+        "SRC-011"
+      ],
+      "targets": [
+        "agent-orchestration",
+        "tender-discovery",
+        "developer-tooling"
+      ],
+      "proposal": "Treat document instructions, tool results and upstream code as untrusted data; use allowlists and explicit authorization.",
+      "acceptance": "Synthetic prompt injection cannot expand file access, expose a secret or trigger a write.",
+      "stop_condition": "Do not install skills, execute scripts, or transfer real documents during research.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-016",
+      "category": "application-architecture",
+      "title": "Deterministic core with advisory AI",
+      "priority": "P1",
+      "source_ids": [
+        "SRC-011",
+        "SRC-012"
+      ],
+      "targets": [
+        "tender-discovery",
+        "estimate-qa",
+        "operations",
+        "ai-evaluation"
+      ],
+      "proposal": "Keep calculations, rules and state transitions separate from AI explanations; surface evidence and override rationale.",
+      "acceptance": "A contradictory AI suggestion cannot change deterministic results or approve actions.",
+      "stop_condition": "Human ownership of bid submission and estimate approval remains explicit.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-017",
+      "category": "application-architecture",
+      "title": "Local-first recoverable workflow",
+      "priority": "P2",
+      "source_ids": [
+        "SRC-008",
+        "SRC-013"
+      ],
+      "targets": [
+        "operations",
+        "document-tracking",
+        "education",
+        "web-ux"
+      ],
+      "proposal": "Persist valid last-known state; mark stale, offline and error states; retry without data loss.",
+      "acceptance": "Offline reload and failed refresh preserve last-known data and visible timestamp.",
+      "stop_condition": "Do not confuse cached or fictional data with live results.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-018",
+      "category": "application-architecture",
+      "title": "Explainable recommendation and feedback",
+      "priority": "P2",
+      "source_ids": [
+        "SRC-012",
+        "SRC-013"
+      ],
+      "targets": [
+        "operations",
+        "ai-evaluation",
+        "education"
+      ],
+      "proposal": "Separate rule-based ranking from explanations; record outcomes without collecting unnecessary raw data.",
+      "acceptance": "Synthetic feedback improves a later comparison without changing historic score evidence.",
+      "stop_condition": "Do not conflate user preference, predicted fit and empirical success.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    },
+    {
+      "id": "ENG-019",
+      "category": "developer-workflow",
+      "title": "Accessibility and UI acceptance evidence",
+      "priority": "P2",
+      "source_ids": [
+        "SRC-009",
+        "SRC-013"
+      ],
+      "targets": [
+        "web-ux",
+        "education",
+        "operations",
+        "developer-tooling"
+      ],
+      "proposal": "Apply existing design library checks to keyboard, 320px layout, reduced motion and error states.",
+      "acceptance": "Real target browser demonstrates keyboard operation and readable layout; if unavailable, mark NOT_RUN.",
+      "stop_condition": "Do not relabel isolated component testing as production browser sign-off.",
+      "status": "RESEARCH_LEAD",
+      "verification": "NOT_RUN",
+      "adoption": "NOT_ADOPTED"
+    }
+  ]
+}

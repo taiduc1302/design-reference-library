@@ -39,6 +39,10 @@ Open `http://localhost:8765/gallery/` to explore the dashboard, website, present
 
 Structured metadata: [`catalog/references.json`](catalog/references.json), [`catalog/components.json`](catalog/components.json), and pinned upstream commits in [`catalog/upstreams.json`](catalog/upstreams.json).
 
+## Engineering Reference Library
+
+For technical architecture, AI agents, evaluation, retrieval, civil geometry, local QA and operational software, start with the [Engineering Reference Library](engineering/README.md), its [machine-readable catalog](engineering/catalog.json) and [pilot roadmap](engineering/ROADMAP.md). These are research leads, not approved integrations. Existing design and external research catalogs remain canonical.
+
 ## External opportunity research (not integrated)
 
 
