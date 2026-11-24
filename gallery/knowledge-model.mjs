@@ -4,7 +4,9 @@ export const collections = Object.freeze([
   {id:"chan", label:"ChanMeng666 research", path:"../catalog/chanmeng666-opportunity-matrix.json"},
   {id:"dchantlos", label:"dchantlos research", path:"../catalog/dchantlos-opportunity-matrix.json"},
   {id:"design", label:"Design references", path:"../catalog/references.json"},
-  {id:"components", label:"Original UI components", path:"../catalog/components.json"}
+  {id:"components", label:"Original UI components", path:"../catalog/components.json"},
+  {id:"byox", label:"BYOX discovery", path:"../engineering/research/build-your-own-x-index.json"},
+  {id:"cc", label:"CodeCrafters discovery", path:"../engineering/research/codecrafters-repository-index.json"}
 ]);
 const list = v => Array.isArray(v) ? v : [];
 const str = v => typeof v === "string" ? v : "";
@@ -15,11 +17,12 @@ export function normalizeCollection(id, data) {
   if (!data || typeof data !== "object" || data.schema_version !== 1) throw Error("Unsupported catalog schema");
   const config=collections.find(x=>x.id===id);
   if (!config) throw Error("Unknown collection");
-  const key=({engineering:"patterns",chan:"records",dchantlos:"patterns",design:"references",components:"components"})[id];
-  if (!Array.isArray(data[key]) || !data[key].length) throw Error("Missing or empty collection");
+  const key=({engineering:"patterns",chan:"records",dchantlos:"patterns",design:"references",components:"components",byox:"records",cc:"records"})[id];
+  const rows=id==="cc"?[...list(data.author?.records),...list(data.organization?.records)].map(r=>({...r,id:r.repository})):data[key];
+  if (!Array.isArray(rows) || !rows.length) throw Error("Missing or empty collection");
   const sources=new Map(list(data.sources).map(s=>[s.id,s]));
   const seen=new Set();
-  return data[key].map(r=>{
+  return rows.map(r=>{
     if (!r || typeof r.id!=="string" || !r.id.trim() || seen.has(r.id)) throw Error("Missing or duplicate record ID");
     seen.add(r.id);
     let title=r.title||r.name||r.id, category=r.category||list(r.categories)[0]||"general";
@@ -40,6 +43,10 @@ export function normalizeCollection(id, data) {
     }else if(id==="design"){
       summary=list(r.patterns).join("; "); risk=r.reuse_note; tags=list(r.categories);
       targets=["web-ux"]; links=[{label:r.author||r.name,url:r.source_url,detail:r.license}];
+    }else if(id==="byox"){
+      status="DISCOVERY_ONLY"; priority=r.triage; summary="Tutorial directory entry; individual review pending."; risk=r.license_status; tags=[r.language,r.catalog_source_id]; links=[{label:r.title,url:r.url}];
+    }else if(id==="cc"){
+      status="DISCOVERY_ONLY"; category="repository discovery"; summary=r.archived?"Archived repository; reference only.":"Repository found; individual review pending."; risk="Reuse rights and implementation not established."; links=[{label:r.repository,url:"https://github.com/"+r.repository}];
     }else{
       category="UI component"; targets=["web-ux"]; summary=r.use_case;
       acceptance=list(r.tested_with).join("; "); risk=list(r.unverified_checks).join("; ");
@@ -55,6 +62,8 @@ const rank={P1:0,HIGH:0,P2:1,MEDIUM:1,P3:2,LOW:2,NONE:3,UNRANKED:4};
 export function searchRecords(records, filters={}) {
   const terms=norm(filters.query).split(/\s+/).filter(Boolean);
   return list(records).filter(r=>{
+    if(filters.scope==="curated"&&["byox","cc"].includes(r.collection))return false;
+    if(filters.scope==="discovery"&&!["byox","cc"].includes(r.collection))return false;
     for (const k of ["collection","status","category","priority"]) if(filters[k]&&filters[k]!=="all"&&r[k]!==filters[k])return false;
     if(filters.target&&filters.target!=="all"&&!r.targets.includes(filters.target))return false;
     const hay=norm([r.id,r.title,r.collectionLabel,r.category,r.status,r.priority,...r.targets,...r.tags,r.summary,r.acceptance,r.risk,...r.links.map(l=>l.label+" "+l.url+" "+(l.detail||""))].join(" "));
