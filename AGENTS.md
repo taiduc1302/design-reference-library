@@ -10,6 +10,10 @@
 4. `docs/CURATION_RULES.md` and `THIRD_PARTY_NOTICES.md`
 5. `docs/PROJECT_HANDOFF.md`
 
+## Engineering references
+
+For non-UI architecture and cross-project technical research, first consult [engineering/README.md](engineering/README.md), [engineering/catalog.json](engineering/catalog.json) and [engineering/ROADMAP.md](engineering/ROADMAP.md). Identify existing target implementations before selecting an ENG pattern. Follow its source-review, acceptance and stop conditions; keep private project identifiers out of the public catalog. Research status does not authorize implementation or dependency installation.
+
 ## Unvetted external opportunities
 
 The research inventory in `catalog/chanmeng666-opportunity-matrix.json` and its [pilot specifications](docs/CHANMENG666_PILOT_ACCEPTANCE_2026-11-17.md) are **not** in the promoted design catalog. `RESEARCH_LEAD` never means `SOURCE_REVIEWED`, `VISUALLY_CHECKED`, or `ADOPTED`.
