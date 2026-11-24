@@ -5,10 +5,12 @@ Owner-approved 2026-11-24: expand technical references, add unified discovery, d
 | Priority | Work | Acceptance / status |
 |---|---|---|
 | P0 | Preserve canonical catalogs, source provenance and privacy | Never copy external/private source or data; keep separate evidence status and source links. |
-| P1 | Extend engineering catalog | 31 patterns / 21 source records after 12 new original proposals; new tutorials are link-only leads. |
-| P1 | Unified search across engineering, ChanMeng666, dchantlos, design references and original components | One read-only local gallery, category/collection/status/capability search, safe links, missing-source disclosure; test actual data and errors. |
+| P1 | Extend engineering catalog | 39 patterns / 24 source records; 383 tutorial and 145 repository discovery records remain separate. |
+| P0 | Consolidate documentation and tests before new research | Sync indexes, verify links and catalog, document actual test scope; publish through reviewed PR. |
+| P1 | Unified search across engineering, ChanMeng666, dchantlos, design references, original components and raw research indexes | One read-only local gallery, category/collection/status/capability search, safe links, missing-source disclosure; test actual data and errors. |
 | P1 | Agent adoption | Add bounded reference guidance to eligible repositories' existing AGENTS.md (or create minimal instructions where absent). Preserve local policy; avoid upstream forks, mirrors, generated snapshots and restricted setup bundles until their policy explicitly permits changes. |
 | P2 | Close audit gaps by capability | Review exact source files and license/dependency scope only for selected pilots; use existing implementations first. Do not call inventory a full audit. |
+| P1 | Map eligible projects and reuse gaps | Document existing implementations and reference links first; no automatic runtime retrofit. |
 | P2 | Pilot shared utilities | Review gate, revision grouping and catalog validator; target-specific acceptance before adoption, no production approvals. |
 | P2 | Create feedback loop | Consuming repos record ENG IDs, actual test evidence, adoption or rejection and rollback; contribute only sanitized general lessons back to library. |
 | P3 | Improve discoverability and maintenance | Add additional filters and source refresh when real need is demonstrated; do not add paid services, automatic Actions or dependencies by default. |
